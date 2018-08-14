@@ -1,0 +1,162 @@
+/* 	GPLv3, Danny Rorabaugh
+	For the Graph Property Database
+	*/
+
+/* general formatting */
+html, body {
+	margin: 0;
+	padding: 0;
+	background: #ddeeff;
+	color: #002266;
+	font-family: sans-serif;
+	font-size: 15px; 
+}
+a:link, a:visited {
+	color: #2244dd;
+	text-decoration: none;
+}
+ul {
+	margin-left: -20px;
+	margin-top: 5px;
+}
+h1, h2, h3, h4 {
+	font-weight: bold;
+	margin: 0;
+	display: block;
+}
+h1 {
+	font-size: 22px;
+	text-align: center;
+}
+h2 {
+	font-size: 20px;
+	text-align: center;
+}
+h3 {
+	font-size: 18px;
+}
+h4{
+	font-size: 16px;
+}
+
+
+/* general-use classes */
+.left {
+	float: left;
+}
+.right {
+	float: right;
+}
+.bigger {
+	font-size:larger;
+}
+
+
+/* outer divs */
+#container {
+	width: 1220px;
+	text-align: center;
+	height: 95%;
+	margin: auto;
+	margin-top: 10px;
+}
+#central {
+	width: 440px;
+	margin: auto;
+}
+#central, .side-bar {
+	margin: auto;
+	display: inline-block;
+	text-align: center;
+	padding: 5px;
+	position: relative;
+}
+.side-bar {
+	width: 350px;
+	margin-top: 154px;
+}
+
+
+/* inner divs */
+.box {
+	height: 280px;
+	width: 340px;
+    padding: 5px;
+	margin: auto;
+	text-align: left;
+	background-color: #eef5ff;
+    border: 2px solid navy;
+    border-radius: 10px;
+	margin-top: 15px;
+	margin-bottom: 15px;
+	overflow: auto;
+}
+#property {
+	display: inline-block;
+}
+
+
+/* arrow divs */
+#arrow-X, #arrow, #arrow-Q {
+	display: block;
+	width: 435px;
+	margin: auto;
+	position: absolute;
+}
+#arrow {
+	margin-top: 140px;
+}
+#arrow-Q {
+	margin-top: 310px;
+}
+.imp {
+	font-size: 44px;
+	position: absolute;
+	margin-left: -17px;
+}
+.imp-alt {
+	font-size: 33px;
+	position: absolute;
+	margin-top: 11px;
+}
+.cw {	
+    transform: rotate(45deg);
+	display: inline-block;
+	margin-left: 18px;
+	margin-right: -18px;
+	margin-top: -4px;
+}
+.ccw {
+	transform: rotate(-45deg);
+	display: inline-block;
+	margin-left: -18px;
+	margin-right: 18px;
+}
+
+
+/* class=popup is only below a link to a related property */
+.link .popup {
+	display: none;
+}
+.link:hover {
+	font-weight: bold;
+}
+*:hover>.popup {
+	display: block;
+	font-weight: normal;
+}
+
+/* keyword modal */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 10px;
+    top: 10px;
+    width: 11%;
+    height: 100%;
+    overflow: auto; /* Enable scroll if needed */
+}
+#keyList {
+	margin-top: 5px;
+}

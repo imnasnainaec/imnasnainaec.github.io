@@ -1,0 +1,115 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+
+<html lang="en">
+
+    <head>
+        <title>GPD:IB</title>
+        
+        <meta license="GPLv3, Danny Rorabaugh" />
+        <meta home="https://github.com/imnasnainaec/GraphPropertyDatabase" />
+        <meta http-equiv="content-type" content="text/html; charset=ISO-8859" />
+
+        <link href="main.css" rel="stylesheet" type="text/css" />
+        
+        <script type="text/javascript" src="data.js" id="data"></script>
+        <script type="text/javascript" src="load.js" id="load"></script>
+    </head>
+    
+    <body>
+
+        <div id="container">
+            <h1>Graph Property Database: Implication Browser</h1>
+
+            <div id="suf" class="left side-bar">
+                <div id="suf1" class="box">
+                    <h3>(Not Equivalent)</h3>
+                    <ul id="SUF1"></ul>
+                </div>
+                <h2>Sufficient Conditions</h2>
+                <div id="suf2" class="box">
+                    <h3>(Possibly Equivalent)</h3>
+                    <ul id="SUF2"></ul>
+                </div>
+            </div>
+            
+            <div id="central">
+                
+                <div id="noimp" class="box">
+                    <h3>Neither Sufficient Nor Necessary</h3>
+                    <ul id="NOIMP"></ul>
+                </div>
+                
+                <div id="arrow-X" class="imp">
+                    <div class="left cw">
+                        <div class="imp">&#8656;</div>
+                        <div class="imp-alt">X</div>
+                    </div>
+                    <div class="right ccw">
+                        <div class="imp">&#8656;</div>
+                        <div class="imp-alt">X</div>
+                    </div>
+                </div>
+                
+                <div id="arrow" class="imp">
+                    <div class="left">
+                        <div class="imp">&#8658;</div>
+                    </div>
+                    <div class="right">
+                        <div class="imp">&#8658;</div>
+                    </div>
+                </div>
+                
+                <div id="arrow-Q" class="imp">
+                    <div class="left ccw">
+                        <div class="imp">&#8656;</div>
+                        <div class="imp-alt">?</div>
+                    </div>
+                    <div class="right cw">
+                        <div class="imp">&#8656;</div>
+                        <div class="imp-alt">?</div>
+                    </div>
+                </div>
+                
+                <div id="property" class="box">
+                    <h1 id="PROP">[Property goes here]</h1>
+                    <p id="DEF"></p>
+                    <h4>Equivalent Properties:</h4>
+                    <ul id="EQUI"></ul>
+                    <h4>Keywords:</h4>
+                    <p id="KEY"></p>
+                </div>
+                
+                <div id="unknown" class="box">
+                    <h3>Implications Unknown</h3>
+                    <ul id="UNK"></ul>
+                </div>
+            </div>
+
+            <div id="nec" class="right side-bar">
+                <div id="nec1" class="box">
+                    <h3>(Not Equivalent)</h3>
+                    <ul id="NEC1"></ul>
+                </div>
+                <h2>Necessary Conditions</h2>
+                <div id="nec2" class="box">
+                    <h3>(Possibly Equivalent)</h3>
+                    <ul id="NEC2"></ul>
+                </div>
+            </div>
+            
+        </div>
+        
+        <div id="keywordModal" class="modal">
+            <h3>Keywords:</h3>
+            <div id="keyList"></div>
+            <h3>Properties Related to: <span id="keyHeader"></span></h3>
+            <ul id="propList"></ul>
+        </div>
+        
+        <script type="text/javascript">
+            initiate();
+        </script>
+
+    </body> 
+    
+</html>
