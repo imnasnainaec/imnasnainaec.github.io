@@ -1,0 +1,88 @@
+a {
+    color: #207010;
+    text-decoration: none;
+}
+
+a:hover {
+    font-weight: bold;
+}
+
+#menu {
+    margin: auto;
+    position: fixed;
+    background-color: #ffffff;
+    width: 100%;
+    top: 0px;
+    left: 0px;
+    border-bottom: 2px solid black;
+    z-index: 1;
+    text-align: center;
+}
+#menu ul {
+    list-style-type: none;
+    margin-left: -35px;
+}
+#menu li {
+    display: inline;
+    padding: 10px;
+}
+
+
+/* for coding.html */
+.latex sub {
+  vertical-align: -0.5ex;
+  margin-left: -0.1667em;
+  margin-right: -0.125em;
+}
+.latex, .latex sub {
+  font-size: 1em;
+}
+.latex sup {
+  font-size: 0.85em;
+  vertical-align: 0.15em;
+  margin-left: -0.36em;
+  margin-right: -0.15em;
+}
+
+
+/* for teaching.html */
+.M111 {
+    color: rgb(221, 0, 34);
+}
+.M115 {
+    color: rgb(238, 85, 0);
+}
+.M122 {
+    color: rgb(204, 175, 0);
+}
+.M141, .M121 {
+    color: rgb(75, 200, 0);
+}
+.M142, .M124 {
+    color: rgb(0, 175, 100);
+}
+.M170 {
+    color: rgb(0, 0, 255);
+}
+.M235, .M242 {
+    color: rgb(102, 0, 204);
+}
+.M544, .M574 {
+    color: rgb(170, 0, 255);
+}
+.M700 {
+    color: rgb(230, 50, 150);
+}
+
+
+/* for research.html */
+.thumb img { 
+    position:absolute;
+    display:none;
+}
+.thumb:hover, .thumb:hover img { 
+    display:initial;
+    height:300px; 
+    margin:auto;
+    z-index:1;
+}

@@ -1,0 +1,263 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN">
+
+<html>
+
+	<head>
+		<title>DR's Open Math Problems</title>
+		
+		<meta author="Danny Rorabaugh">
+		<meta updated="2017-03-08">
+		<meta http-equiv="content-type" content="text/html; charset=ISO-8859">
+		
+		<link rel="stylesheet" type="text/css" href="rorabaugh.css">
+		
+		<script src='https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>
+	</head>
+
+	<body lang="EN-US">
+		<div id="menu">
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="research.html">Research</a></li>
+				<li><strong>Open Problems</strong></li>
+				<li><a href="teaching.html">Teaching</a></li>
+				<li><a href="coding.html">Coding</a></li>
+				<li><a href="spanish.html">Espa&ntilde;ol</a></li>
+			</ul>
+		</div>
+		
+		<!--Open Problems-->
+		<div style="margin-top:60px;">
+			<h3>My Favorite Open Problems in Mathematics</h3>
+			<b>... on Graphs</b>
+			<ul>				
+				<li>
+				A graph with m edges is <i>antimagic</i> provided there is an injective labeling of the edges with \(\{1,2,...,m\}\) such that, if each vertex is assigned the sum of the labels of the incident edges, the vertex sums are pairwise distinct.
+				<br>
+				<b>Conjecture:</b> "Every connected graph different from \(K_2\) is antimagic."
+				<br>
+				This was posed by Hartsfield and Ringle [<a href="http://proofits.files.wordpress.com/2012/09/0123285526_graphtheory.pdf" target="_blank">1990</a>, pp 108].
+				<br>
+				A natural generalization is: A graph with \(m\) edges is <i>\(k\)-antimagic</i> provided there is an injective labeling of the edges with \(\{1,2,...,m+k\}\) such that... the vertex sums are pairwise distinct.
+				<br>
+				<b>Question:</b> For what \(k\) is every connected graph, except \(K_2\), \(k\)-antimagic?
+				<br>
+				Berikkyzy et al. [<a href="http://sites.google.com/site/rmgpgrwc/research-papers" target="_blank">2014+</a>] proved that every connected graph on \(n \geq 3\) vertices is \(\left\lfloor \frac{4n}{3} \right\rfloor\)-antimagic. 
+				<br><br>
+								
+				<li>
+				A <i>pseudograph</i> is an undirected graph with loops and multiple edges allowed. An <i>\(\{r-t,t\}\)-factor</i> of an \(r\)-regular graph is a spanning subgraph in which every vertex has degree either \(r-t\) or \(t\). Assume henceforth that \(0 < t \leq \frac{r}{2}\).
+				<br>
+				Akbari and Kano [<a href="http://dx.doi.org/10.1007/s00373-013-1324-x" target="_blank">2014</a>] showed that if \(r > 4\) is odd and either \(t\) is even or \(t \geq \frac{r}{3}\) is odd, then every \(r\)-regular pseudograph has an \(\{r-t,t\}\)-factor.
+				They further conjectured this to be the case for odd \(r\) and all \(t\).
+				<br>
+				Axenovich and Rollin [<a href="http://arxiv.org/abs/1410.1219" target="_blank">2015</a>] disproved their conjecture, showing that for odd \(t\) with \((t+1)(t+2) \leq r\), there exists an \(r\)-regular graph with no \(\{r-t,t\}\)-factor.
+				<br>
+				The smallest values of \(r\) and \(t\) for which Akbari and Kano's conjecture remains open are \(r = 5\) and \(t = 1\).
+				<br>
+				<b>Conjecture:</b> Every \(5\)-regular pseudograph contains a \(\{4,1\}\)-factor.
+				<br>
+				Bernshteyn et al. [<a href="http://arxiv.org/abs/1603.09384" target="_blank">2016+</a>] established about a dozen conditions that must apply to a vertex-minimal \(5\)-regular pseudograph with no \(\{4,1\}\)-factor, provided such a graph exists.
+				<br><br>
+			</ul>
+			<b>... in Geometry</b>
+			<ul>
+				
+				<li>
+				<b>Question:</b> What is the greatest number of non-overlapping congruent regular tetrahedra that can share a common vertex?
+				<br>
+				You can slice up a regular icosahedron into \(20\) non-regular tetrahedra touching the center, and these are short, fat tetrahedra, so you can fit a regular tetrahedron within each.
+				<br>
+				By calculating the solid angle cut out by a regular tetrahedron, you find that at most \(22\) can fit within the full solid angle.
+				<br>
+				This question first emerged no later than 1958, yet it remains open whether the answer is \(20\), \(21\), or \(22\).
+				<br>
+				Lagarias and Zong [<a href="http://citeseerx.ist.psu.edu/viewdoc/summary?doi=10.1.1.251.3224" target="_blank">2012</a>] give more details for this and other tetrahedra-packing problems.
+				
+				<br><br>
+				
+				<li>There are many ways one might define how "close" a simple polygon is to being convex. 
+				For example, every exterior angle of a polygon has measure at least \(\pi\), so a polygon with a minimum exterior angle near zero might be considered "very unconvex."
+				<br>
+				<b>Conjecture 1:</b> Every set of \(n\) points (no \(3\) colinear) has a simple polygonization with minimum exterior angle at least \(\frac{2\pi}{n-1}\).
+				<br>
+				Rorabaugh [<a href=" in <a href="http://arxiv.org/abs/1409.4344" target="_blank">2014+</a>] posed this along with the following partial results:
+				<br>
+				(i) ... minimum exterior angle at least \(\frac{\pi}{(n-1)(n-x)}\), where \(x\) is the number of points on the convex hull.
+				<br>
+				(ii) If the conjecture is correct, it is tight, achieved by \(n-1\) points in a circle with \(1\) point in the center.
+				
+				<br><br>
+				
+				<li>A subset \(S \subseteq R^d\) is a <i>Danzer set</i> provided every convex body of volume \(1\) in \(R^d\) contains a point in \(S\). Assume \(d \geq 2\).
+				<br>
+				<b>Question:</b> Does there exist a Danzer set with density \(O(1)\)--that is, with \(O(r^d)\) points in the ball of radius \(r \rightarrow \infty\)?
+				<br>
+				Bambah and Woods [<a href="http://projecteuclid.org/download/pdf_1/euclid.pjm/1102970604" target="_blank">1971</a>] showed that a Danzer set cannot be the union of a finite number of grids, but there exist Danzer sets with density \(O\!\left((\log r)^{(d-1)}\right)\).
+				<br>
+				Solomon and Weiss [<a href="http://arxiv.org/abs/1406.3807" target="_blank">2014</a>] improved both results, showing that a Danzer set cannot be a cut-and-project set, but there exist Danzer sets with density \(O(\log r)\).
+				<br><br>
+				Gowers [<a href="http://www.dpmms.cam.ac.uk/~wtg10/gafavisions.ps" target="_blank">2000</a>] asked whether there exists a Danzer set \(S\) with \(d = 2\) and a constant \(C\) such that every convex body of area \(1\) contains at most \(C\) points in \(S\). <br>
+				Solan, Solomon, and Weiss [<a href="http://arxiv.org/abs/1510.07179" target="_blank">2015</a>] proved that no such set exists; moreover, given a Danzer set \(S\) with \(d \geq 2\), for any positve \(n\) and \(\varepsilon\), there exists an ellipsoid with volume at most \(\varepsilon\) and with at least \(n\) points in \(S\). 
+				<br><br>
+				Conway offers <a href="http://oeis.org/A248380/a248380.pdf" target="_blank">$1000</a> for a solution to the following Danzer problem variant:
+				<br>
+				"<b>Dead Fly Problem:</b> If a set of points in the plane contains one point in each convex region of area \(1\), then 
+must it have pairs of points at arbitrarily small distances?"
+				<br>
+				The Solan-Solomon-Weiss result does not give a positive answer to Conway's question because the longest diameter of their ellipsoid can grow with \(n\).
+				
+				<br><br>
+				
+				<li>A point-set \(S\) in the plane satisfies <i>geometric characterization \(GC_n\)</i> provided for each \(x \in S\), there is a set of \(n\) lines such that \(x\) is not on any of the lines by each point in \(S-\{x\}\) is on at least one line.
+				<br>
+				<b>Conjecture:</b> Given a \(GC_n\)  point-set \(S\), there exists a line containing \(n-1\) points of \(S\).
+				<br>
+				This is a conjecture of Gasca and Maeztu [<a href="http://resolver.sub.uni-goettingen.de/purl?GDZPPN001177109" target="_blank">1982</a>].
+				<br>
+				It is known to be true for \(n \leq 5\): Busch [<a href="http://www.researchgate.net/publication/268997837_A_note_on_Lagrange_interpolation_in_R_2" target="_blank">1990</a>] proved it for \(n = 4\) and Hakopian, Jetter, and Zimmermann [<a href="http://www.uni-hohenheim.de/~gzim/Publications/gmcfnf.pdf" target="_blank">2013</a>] for \(n = 5\).
+				<br>
+				This problem was my <a href="http://docs.google.com/viewer?a=v&pid=sites&srcid=ZGVmYXVsdGRvbWFpbnxybWdwZ3J3Y3xneDoyNDc4ZTdjNWQ0ZDJlN2M5" target="_blank">2014</a> submission to the Rocky Mountain-Great Plains Graduate Research Workshop in Combinatorics.
+				<br><br>
+				
+				<li>Call two filled triangle in \(\mathbb{R}^3\) <i>almost-disjoint</i> provided they intersect in at most one point and, if they do, that point is a vertex of both triangles. 
+				Let \(f(n)\) be the maximum number of pairwise almost-disjoint triangles one can embed in \(\mathbb{R}^3\) so that the total number of vertex points is \(n\).
+				For example \(4\) faces of an octahedron can be selected so that no two share more than one point, and this is the greatest number of pairwise almost-disjoint triangles on \(6\) vertex points, of so \(f(6) = 4\).
+				<br>
+				<b>Question:</b> What is the asymptotic growth of \(f(n)\)?
+				<br>
+				Since each pair of vertices is contained in at most one edge, and there are only three edges per triangle, \(f(n) \leq {n \choose 2}/3 \ll n^2\).
+				<br>
+				This question was asked by Kalai in 1995, as told by K&aacute;rolyi and Solymosy [<a href="https://www.semanticscholar.org/paper/Almost-Disjoint-Triangles-in-3-Space-K%C3%A1rolyi-Solymosi/b1b5eb7576416aeb5d9aaf8ed99ca21eb129257e" target="_blank">2002</a>], who proved that \(f(n) \gg n^{3/2}\).
+				<br>
+				This problem was my <a href="https://docs.google.com/viewer?a=v&pid=sites&srcid=ZGVmYXVsdGRvbWFpbnxybWdwZ3J3Y3xneDozN2Y1Y2FjZjA3NWExOGMx" target="_blank">2015</a> submission to the Rocky Mountain-Great Plains Graduate Research Workshop in Combinatorics.
+				<br><br>
+				
+				<li>An <i>intersecting family</i> is a collection of sets such that every pair of sets has a non-empty intersection. An \(r\)-set is a set with \(r\) elements. <br>
+				Erd&#337;s, Ko, and Rado [<a href="http://www.renyi.hu/~p_erdos/1961-07.pdf" target="_blank">1961</a>] proved that the maximum size of an intersecting family of \(r\)-subsets of \(\{1,2,...,n\}\) with \(2r \leq n\) is \({n-1 \choose r-1}\). <br>
+				Equality can be attained by fixing one element and taking the collection of all \(r\)-sets containing that element. Thus there are \(n-1\) options for the other \(r-1\) elements. <br>
+				Kalai [<a href="http://mathoverflow.net/questions/114646" target="_blank">2015</a>] proposed an analogous result for polygon triangulations: <br>
+				"Let \(\mathcal{T}_n\) be the family of all triangulations on an \(n\)-gon using \(n-3\) non-intersecting diagonals. The number of triangulations in \(\mathcal{T}_n\) is \(C_{n-2}\) the \((n-2)\)-th <a href="http://oeis.org/A000108" target="_blank">Catalan number</a>. Let \(\mathcal{S} \subset \mathcal{T}_n\) be a subfamily of triangulations with the property that every two triangulations of \(\mathcal{S}\) have a common diagonal.<br>
+<b>Problem:</b> Show that \(|\mathcal{S}| \leq |\mathcal{T}_{n-1}|\)."<br>
+				Similarly to the set situation, equality can be attained by fixing a diagonal that divides the n-gon into a triangle and an \((n-1\))-gon, leaving \(|\mathcal{T}_{n-1}|\) possibilities for the rest of the triangulation. 
+				<br><br>
+				
+			</ul>
+			
+			<b>... on Words</b>
+			<ul>				
+<!--
+				<li>
+				Word W is an <i>instance</i> of word V provided W = &phi;(V) for some nonerasing monoid homomorphism &phi;. 
+				For example, "Mr.Freeze" is an instance of "cool" via the homomorphism defined by &phi;(c) = Mr.Fr, &phi;(o) = e, &phi;(l) = ze. 
+				The <i>instance probability</i> I_n(V,q) is defined to be the number of length-n instances of V over the alphabet {1,2,...,q} divided by q^n.
+				For V consisting of k>0 distinct letters, let r_1,...,r_k be the number of times each letter appears in V, and let d = gcd(r_i) and r = min(r_i).
+				<br>
+				<b>Conjecture 13:</b> lim_{n->&infin;, d|n} I_n(V,q)*q^(n*(1 - 1/r)) exists.
+				<br>
+				Cooper and Rorabaugh [<a href=" in <a href="http://arxiv.org/abs/1504.04424" target="_blank">2015</a>] posed this along with the following partial results:
+				<br>
+				(i) When r = 1, the limit exists and is positive.
+				<br>
+				(ii) When r divides |V|, the limit (provided it exists) must be at least q^(k - |V|/r). 
+				<br>
+				(iii) When d divides n (otherwise the instance probability is 0), I_n(V,q)*q^(n*(1 - 1/r)) is bounded above by binomial(n/d + k + 1, k + 1).
+				<br><br>
+-->
+				<li>
+				The <i>period</i> of word \(W\), denoted \(p(W)\), is the least positive \(p\) such that \(W[i] = W[i+p]\) for all \(i\). 
+				A <i>bifix</i> or <i>border</i> of \(W\) is a proper factor that is both a prefix and suffix of \(W\). 
+				Thus \(p(W) = |W|\) iff \(W\) is bifix-free/unbordered. 
+				Let \(\mu(W)\) be the length of the largest bifix-free factor of \(W\). 
+				Trivially, \(\mu(W) \leq p(W)\).
+				<br>
+				<b>Question:</b> What word-lengths \(|W|\) imply that \(\mu(W) = p(W)\)?
+				<br>
+				This was first explored by Ehrenfeucht and Silberger [<a href="http://dx.doi.org/10.1016/0012-365X(79)90116-X" target="_blank">1979</a>], who conjectured that \(|W| \geq 2\mu(W)\) is sufficient.
+				<br>
+				Assous and Pouzet [<a href="http://dx.doi.org/10.1016/0012-365X(79)90146-8" target="_blank">1979</a>] disproved that conjecture, providing couterexamples when \(|W| = \frac{7}{3}\mu(W) - 4\). They conjectured that \(|W| \geq 3\mu(W)\) is sufficient and best possible.
+				<br>
+				Duval [<a href="http://dx.doi.org/10.1016/0012-365X(82)90186-8" target="_blank">1982</a>] proved that \(|W| \geq 4\mu(W) - 6\) is sufficient.
+				<br>
+				Harju and Nowotka [<a href="http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.101.4863&rep=rep1&type=pdf" target="_blank">2003</a>] proved that \(|W| \geq 3\mu(W) - 2\) is sufficient and conjectured that even \(|W| \geq \frac{7}{3}\mu(W) - 3\) suffices.
+				<br><br>
+				
+				<li>
+				<b>Question:</b> Do there exist words \(u_1, \ldots, u_n\) such that
+				<ul>
+					<li>\((u_1 u_2 \cdots u_n)^2 = (u_1)^2 (u_2)^2 \cdots (u_n)^2\) and
+					<li>\((u_1 u_2 \cdots u_n)^3 = (u_1)^3 (u_2)^3 \cdots (u_n)^3\),
+				</ul>
+				and the words do not all pairwise commute, that is, \(u_i u_j \neq u_j u_i\) for at least one pair \((i,j)\)?<br>
+				Holub [<a href="http://msekce.karlin.mff.cuni.cz/~holub/soubory/prizeproblem.pdf" target="_blank">2003+</a>] offers a reward of 200 &euro; for a solution.
+				<br><br>
+				
+			</ul>
+			
+			<b>... on Numbers</b>
+			<ul>				
+				<li>
+				The <b>Collatz Conjecture</b> or <b>\(3n+1\) Problem</b>.
+				<br>
+				Consider the following process: if a number is odd, multiply by three and add one; if it is even, divide by two.
+				<br>
+				<b>Conjecture:</b> Every positive integer, under repeated application of the \(3n+1\) process, will eventually reach \(1\).
+				<br>
+				Starting with \(7\), for example, \(7 \rightarrow 22 \rightarrow 11 \rightarrow 34 \rightarrow 17 \rightarrow 52 \rightarrow 26 \rightarrow 13 \rightarrow 40 \rightarrow 20 \rightarrow 10 \rightarrow 5 \rightarrow 16 \rightarrow 8 \rightarrow 4 \rightarrow 2 \rightarrow 1\).
+				<br>
+				You can read more on <a href="http://mathworld.wolfram.com/CollatzProblem.html" target="_blank">MathWorld</a> or <a href="http://en.wikipedia.org/wiki/Collatz_conjecture" target="_blank">Wikipedia</a>.
+				<br>
+				This is an extremely popular problem, as demonstrated by Lagarias' annotated bibliographies (<a href="http://arxiv.org/abs/math/0309224" target="_blank">1963&mdash;1999</a> and <a href="http://arxiv.org/abs/math/0608208" target="_blank">2000&mdash;2009</a>) and the hundreds of <a href="http://oeis.org/search?q=collatz" target="_blank">"collatz"</a>-related sequences on the OEIS.
+				<br>
+				I myself investigated a generalization for my undergraduate thesis [<a href="docs/CollatzGeneralized.pdf" target="_blank">2010</a>], which I have since enjoyed sharing with other undergrads [<a href="http://www.youtube.com/watch?v=mYX9PI6dAzs" target="_blank">2012</a>].
+				<br>
+				As of March 2016, the conjecture has been verified for every positive integer up to \(2^{60}\), according to Roosendaal's <a href="http://www.ericr.nl/wondrous/" target="_blank">website</a>.
+				<br>
+				Before you descend into this rabbit hole, consider a <a href="http://xkcd.com/710/" target="_blank">warning</a> from xkcd.
+				<br><br>
+			</ul>
+		</div>
+		
+		<hr>
+		
+		<br>
+		Please email me if you are aware of any significant advances on the above problems or if any of my hyperlinks are dead.
+		<br><br>
+		
+		<hr>
+		
+		<!--Other Lists-->
+		<div id="">
+			<h4>Other Problem Sources</h4>
+			<ul>
+				<li>Clark Kimberling, <a href="http://faculty.evansville.edu/ck6/integer/unsolved.html" target="_blank">Unsolved Problems and Rewards</a> (sequences)
+				<li>Craig Larson and Nico Van Cleemput, <a href="http://independencenumber.wordpress.com/" target="_blank">The Conjecturing Project</a> (graphs)
+				<li>Dan Archdeacon, <a href="http://www.cems.uvm.edu/TopologicalGraphTheoryProblems/" target="_blank">Problems in Topological Graph Theory</a>
+				<li>David Eppstein, <a href="http://www.ics.uci.edu/%7Eeppstein/junkyard/open.html" target="_blank">The Geometry Junkyard: Open Problems</a> (discrete and computational geometry)
+				<li>Douglas B. West, <a href="http://www.math.illinois.edu/~dwest/openp/" target="_blank">Open Problems - Graph Theory and Combinatorics</a>
+				<li>Douglas B. West, <a href="http://www.math.illinois.edu/~dwest/regs/" target="_blank">REGS in Combinatorics - Univ. of Illinois</a>
+				<li>Egerv&aacute;ry Research Group, <a href="http://lemon.cs.elte.hu/egres/open" target="_blank">Egres Open</a> (combinatorial optimization)
+				<li>Erik D. Demaine, Joseph S. B. Mitchell, and Joseph O'Rourke, <a href="http://cs.smith.edu/~orourke/TOPP" target="_blank">The Open Problems Project</a> (computational geometry and related fields)
+				<li>Jerry Spinrad, <a href="http://www.vuse.vanderbilt.edu/%7Espin/open.html" target="_blank">open</a> (graphs, graph algorithms)
+				<li>Joshua Cooper, <a href="http://people.math.sc.edu/cooper/combprob.html" target="_blank">Combinatorial Problem I Like</a>
+				<li>MathOverflow, <a href="http://mathoverflow.net/search?q=answers%3A0+closed%3Ano" target="_blank">Unanswered Questions</a>
+				<li>The On-line Encyclopedia of Integer Sequence, <a href="https://oeis.org/search?q=conjecture+-abc+-collatz+-goldbach+-twin" target="_blank">sequences with "conjecture" in their entry</a>
+				<li>The On-line Encyclopedia of Integer Sequence, <a href="https://oeis.org/search?q=empirical" target="_blank">sequences with "empirical" in their entry</a>
+				<li><a href="http://www.openproblemgarden.org/" target="_blank">Open Problem Garden</a>
+				<li>Peter J. Cameron, <a href="http://www.maths.qmul.ac.uk/~pjc/oldprobidx.html" target="_blank">Problem pages index</a> (combinatorics)
+				<li>Rocky Mountain-Great Plains Graduate Research Workshop in Combinatorics, <a href="http://sites.google.com/site/rmgpgrwc/problem-gardens" target="_blank">Problem Gardens</a>
+				<li>Rutgers Center for Discrete Mathematics &amp; Theoretical Computer Science, <a href="http://dimacs.rutgers.edu/Challenges/" target="_blank">DIMACS Implementation Challenges</a>
+				<li>S.C. Locke, <a href="http://math.fau.edu/locke/Unsolved.htm" target="_blank">Unsolved Problems</a> (graphs, etc.)
+				<li>UCSD Mathematics Department, <a href="http://www.math.ucsd.edu/~erdosproblems" target="_blank">Erd&#337;s' Problems on Graphs</a>
+				<li>University of Waterloo, <a href="http://cs.uwaterloo.ca/twiki/view/CoWiki/WebHome" target="_blank">CoWiki</a> (words)
+				<li>Va&#154;ek Chv&aacute;tal, <a href="http://users.encs.concordia.ca/%7Echvatal/perfect/problems.html" target="_blank">Perfect Problems</a> (perfect graphs)
+				<li>Wikipedia, <a href="http://en.wikipedia.org/wiki/List_of_unsolved_problems_in_mathematics" target="_blank">List of unsolved problems in mathematics</a>
+				<li>Wolfram MathWorld, <a href="http://mathworld.wolfram.com/UnsolvedProblems.html" target="_blank">Unsolved Problems</a>
+			</ul>
+		</div>
+		<br>
+		
+	
+	</body>
+	
+</html>
