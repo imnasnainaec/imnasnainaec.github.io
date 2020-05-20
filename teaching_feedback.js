@@ -1,6 +1,6 @@
 var classText = {
 
-	"121":[
+	"class121":[
 		"Prof. was enthusiastic",
 		"I liked the actual intrest he had for Math & his little quirks. Made it interesting & fun to go to class. 10/10 What a good guy.",
 		"Your puzzles in your office are cool",
@@ -66,7 +66,7 @@ var classText = {
 		
 	],
 
-	"124":[
+	"class124":[
 		"RORABAUGH!! The Best man, you seriously the coolest. Keep doing you.",
 		"I liked the professor as he made the lectures interesting and funny. I also liked the organization of the course, everythign was easy to [illegible word].",
 		"I like math.",
@@ -87,7 +87,7 @@ var classText = {
 		//"Danny Rorabaugh. MOST FUN I'VE HAD WITH CLOTHES ON....",
 	],
 
-	"124b":[
+	"class124b":[
 		"I liked the material we learned.",
 		//"good humour.",
 		"The content was very interesting",
@@ -112,7 +112,7 @@ var classText = {
 		//"1. Funny  2. Math is good! when you play more",
 	],
 	
-	"235":[
+	"class235":[
 		"[picture of a cow wearing a propeller hat]",
 		"The instructor explains the course material clearly and smoothly, and also the course is overall well-organized.",
 		"Danny is a G.",
@@ -180,13 +180,13 @@ var classText = {
 		//text_121[66] = "DANNY MY BOY! He's Ferda",
 	],
 	
-	"111":[
+	"class111":[
 		"Great at making sure we understand processes w/o overusage of calculator. Overall great teacher.",
 		"His enthusiasm is beneficial & the way he explains things works well.",
 		"The teacher gave many opportunities to practice material and improve grade.",
 	],
 	
-	"115":[
+	"class115":[
 		"He is very willing to help us in any way he can: Knows the material very well and is a good instructor.",
 		"Danny was a tough yet fair teacher. His tests were very difficult, but he offered many opportunities to improve our grades.",
 		"The instructor understood the material very well and was able to teach it.",
@@ -211,7 +211,7 @@ var classText = {
 		"I actually love the way my professor taught his class. I think that he thoroughly taught all of the material for each chapter. Sometimes I feel that he taught too much information, but in a sense that is just me being lazy. Professor Rorabaugh is one of the best teachers I have ever had. Great work.",
 	],
 	
-	"122":[
+	"class122":[
 		"This is Danny's class. // Calculus is what we do. // It is a great class.",
 		"Algebra is fun // but that's just level one. // Next comes calculus // it makes you like math way less // until you discover // how it can relate one thing to another. // Now I feel quick & smart // It's now time to part.",
 		"He was always available to help students when need be.",
@@ -226,7 +226,7 @@ var classText = {
 		"He is funny and easy to listen to.",
 	],
 	
-	"142":[
+	"class142":[
 		"Danny saved my career. He has a knack for explaining things how I can learn it.",
 		"He is great. Danny should teach this instead of professors.",
 		"Very open for discussion.",
@@ -234,7 +234,7 @@ var classText = {
 		//"This is a ridiculous pre-req for marine science majors.",
 	],
 	
-	"170":[
+	"class170":[
 		"Grades quickly, gives a lot of examples.",
 		"He explained the material very well & always wanted us to know the material inside & out. Frequent quizzes but they helped make sure we understood what we were learning.",
 		" 'Q' was great; he had great agents.",
@@ -251,7 +251,7 @@ var classText = {
 		"Very helpful and made himself available to students when extra time was needed.",
 	],
 	
-	"401":[
+	"class401":[
 		"I thought the assignments were just the right level, at times challenging but doable with what we learned. The courseload was not too high, but I think I learned quite a lot.",
 		"I enjoyed the fun puzzles the prof posted online.",
 		"The prof was a great teacher and the material of this course is interesting and actually applicable.",

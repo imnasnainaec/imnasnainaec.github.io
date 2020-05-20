@@ -10,6 +10,7 @@
         <meta http-equiv="content-type" content="text/html; charset=UTF-8">
 		
 		<link rel="stylesheet" type="text/css" href="rorabaugh.css">
+		<style type="text/css">#gmap_canvas img{max-width:none!important; background:none!important}</style>
 	</head>
 
 	<body lang="ES-US">
@@ -89,7 +90,6 @@
 			<script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script>
 			<div style="overflow:hidden; height:500px; width:750px; margin:auto;">
 				<div id="gmap_canvas" style="height:500px; width:750px;"></div>
-				<style type="text/css">#gmap_canvas img{max-width:none!important; background:none!important}</style>
 				<a class="google-map-code" href="http://www.mapsembed.com" id="get-map-data">www.mapsembed.com</a>
 			</div>
 			<script type="text/javascript"> 
@@ -98,39 +98,39 @@
 					map = new google.maps.Map(document.getElementById("gmap_canvas"), myOptions);
 					
 					marker1 = new google.maps.Marker({map: map,position: new google.maps.LatLng(6.231, -75.591)});
-					infowindow1 = new google.maps.InfoWindow({content:"<b>Medell&iacute;n</b>" });
+					infowindow1 = new google.maps.InfoWindow({content:"Medell&iacute;n" });
 					google.maps.event.addListener(marker1, "click", function(){infowindow1.open(map,marker1);});
 					
 					marker2 = new google.maps.Marker({map: map,position: new google.maps.LatLng(11.208, -74.189)});
-					infowindow2 = new google.maps.InfoWindow({content:"<b>Santa&nbsp;Marta</b>" });
+					infowindow2 = new google.maps.InfoWindow({content:"Santa&nbsp;Marta" });
 					google.maps.event.addListener(marker2, "click", function(){infowindow2.open(map,marker2);});
 					
 					marker3 = new google.maps.Marker({map: map,position: new google.maps.LatLng(10.394,-75.496)});
-					infowindow3 = new google.maps.InfoWindow({content:"<b>Cartagena</b>" });
+					infowindow3 = new google.maps.InfoWindow({content:"Cartagena" });
 					google.maps.event.addListener(marker3, "click", function(){infowindow3.open(map,marker3);});
 					
 					marker4 = new google.maps.Marker({map: map,position: new google.maps.LatLng(14.563,-90.734)});
-					infowindow4 = new google.maps.InfoWindow({content:"<b>Antigua</b>" });
+					infowindow4 = new google.maps.InfoWindow({content:"Antigua" });
 					google.maps.event.addListener(marker4, "click", function(){infowindow4.open(map,marker4);});
 					
 					marker5 = new google.maps.Marker({map: map,position: new google.maps.LatLng(19.320,-99.152)});
-					infowindow5 = new google.maps.InfoWindow({content:"<b>Distrito&nbsp;Federal</b>" });
+					infowindow5 = new google.maps.InfoWindow({content:"Distrito&nbsp;Federal" });
 					google.maps.event.addListener(marker5, "click", function(){infowindow5.open(map,marker5);});
 					
 					marker6 = new google.maps.Marker({map: map,position: new google.maps.LatLng(31.890,-116.691)});
-					infowindow6 = new google.maps.InfoWindow({content:"<b>El&nbsp;Sauzal</b>" });
+					infowindow6 = new google.maps.InfoWindow({content:"El&nbsp;Sauzal" });
 					google.maps.event.addListener(marker6, "click", function(){infowindow6.open(map,marker6);});
 					
 					marker7 = new google.maps.Marker({map: map,position: new google.maps.LatLng(14.551,-90.678)});
-					infowindow7 = new google.maps.InfoWindow({content:"<b>Magdalena</b>" });
+					infowindow7 = new google.maps.InfoWindow({content:"Magdalena" });
 					google.maps.event.addListener(marker7, "click", function(){infowindow7.open(map,marker7);});
 					
 					marker8 = new google.maps.Marker({map: map,position: new google.maps.LatLng(25.821,-80.282)});
-					infowindow8 = new google.maps.InfoWindow({content:"<b>Miami&nbsp;Springs</b>" });
+					infowindow8 = new google.maps.InfoWindow({content:"Miami&nbsp;Springs" });
 					google.maps.event.addListener(marker8, "click", function(){infowindow8.open(map,marker8);});
 					
 					marker9 = new google.maps.Marker({map: map,position: new google.maps.LatLng(4.648,-74.108)});
-					infowindow9 = new google.maps.InfoWindow({content:"<b>Bogot&aacute;</b>" });
+					infowindow9 = new google.maps.InfoWindow({content:"Bogot&aacute;" });
 					google.maps.event.addListener(marker9, "click", function(){infowindow9.open(map,marker9);});
 				} google.maps.event.addDomListener(window, 'load', init_map);
 			</script>
