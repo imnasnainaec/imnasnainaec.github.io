@@ -1,0 +1,367 @@
+/*@charset "UTF-8";
+ /*!
+ * Bootstrap v3.0.3
+ *
+ * Copyright 2013 Twitter, Inc
+ * Licensed under the Apache License v2.0
+ * http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Designed and built with all the love in the world @twitter by @mdo and @fat.
+ */
+ /*! normalize.css v2.1.3 | MIT License | git.io/normalize */
+footer,header,main,nav,section{display:block}
+html{font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;-webkit-tap-highlight-color:rgba(0,0,0,0);height:100%;font-size:100%;margin:0}
+
+/*body; footer*/
+body{margin:0}
+body{font-family:"Helvetica Neue", Helvetica, Arial, sans-serif;font-size:14px;line-height:1.428571429;color:#333333;background-color:#ffffff}
+body{height:100%;font-family:OsloLightRegular;font-size:10px;margin:0}
+body{font-size:10px;min-height:100%;max-width:100vw}
+.footer{position:relative;width:100%;height:32px;line-height:32px}
+.footer a,.footer a:hover{font-family:HelveticaNeue, Helvetica, Arial, sans-serif;font-size:12px;text-transform:none}
+.footer .footer-text{text-align:center;font-size:12px;font-style:normal;text-transform:none;font-family:HelveticaNeue, Helvetica, Arial, sans-serif}
+.footer{padding-top:50px}
+body,.footer-text{font-size:16px}
+body{font-family:"Martel Sans";font-size:16px;font-style:normal;font-weight:normal;color:#051B46;line-height:1.8}
+body{color:#051B46;font-family:Martel Sans;font-size:16px;font-style:normal}
+
+h1{font-size:2em;margin:0.67em 0}
+b,strong{font-weight:bold}
+hr{-moz-box-sizing:content-box;box-sizing:content-box;height:0}
+img{border:0}
+button{line-height:normal;text-transform:none;-webkit-appearance:button;cursor:pointer}
+button[disabled]{cursor:default}
+button::-moz-focus-inner{border:0;padding:0}
+*,*:before,*:after{-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box}
+a{color:inherit;text-decoration:none}
+a:hover,a:focus{text-decoration:underline}
+img{vertical-align:middle}
+hr{margin-top:20px;margin-bottom:20px;border:0;border-top:1px solid #eeeeee}
+.container{margin-right:auto;margin-left:auto;padding-left:10px;padding-right:10px}
+.container:before,.container:after{content:" ";display:table}
+.container:after{clear:both}
+.container:before,.container:after{content:" ";display:table}
+.container:after{clear:both}
+@media (min-width: 768px){.container{width:740px}}
+@media (min-width: 992px){.container{width:960px}}
+@media (min-width: 1024px){.container{width:1160px}}
+.row,.section-items,.wedding-event-section-items,.photo-section-items{margin-left:-10px;margin-right:-10px}
+.row:before,.section-items:before,.wedding-event-section-items:before,.photo-section-items:before,.row:after,.section-items:after,.wedding-event-section-items:after,.photo-section-items:after{content:" ";display:table}
+.row:after,.section-items:after,.wedding-event-section-items:after,.photo-section-items:after{clear:both}
+.row:before,.section-items:before,.wedding-event-section-items:before,.photo-section-items:before,.row:after,.section-items:after,.wedding-event-section-items:after,.photo-section-items:after{content:" ";display:table}
+.row:after,.section-items:after,.wedding-event-section-items:after,.photo-section-items:after{clear:both}
+.col-sm-4,.item,.wedding-event-item,.item-separator,.wedding-event-separator,.blank-seperator{position:relative;min-height:1px;padding-left:10px;padding-right:10px}
+.item,.wedding-event-item,.item-separator,.wedding-event-separator{float:left}
+.item,.wedding-event-item,.item-separator,.wedding-event-separator{width:100%}
+@media (min-width: 640px){.col-sm-4{float:left;width:33.33333333333%}}
+.page{display:block;margin-left:auto;margin-right:auto}
+@-ms-viewport{width:device-width}
+ul{margin:0;padding:0}
+li{list-style:none}
+a:hover{text-decoration:none}
+button{border:1px solid !important}
+
+/*guestbook*/
+.guest-book-page{margin:auto}
+.guest-book-page .page-body .description{font-weight:600;line-height:1.5em;margin-bottom:20px;white-space:pre-wrap}
+.guest-book-page .page-body .guest-posts{margin-top:30px;margin-left:auto;margin-right:auto}
+@media (min-width: 992px){
+    .guest-book-page .page-body .description{width:475px}
+    .guest-book-page .page-body .guest-posts{width:560px}
+}
+.guest-posts .post-detail p.subheader{display:inline-block;font-size:1.6em;margin-right:10px;margin-top:30px}
+.guest-posts .post-detail p.secondary-text{color:#bbbbbb;display:inline-block;font-size:1.2em}
+.guest-posts .post-detail p.post-content{font-size:1.3em;line-height:1.5em}
+.guest-posts .post-detail p{overflow-wrap:break-word;white-space:pre-wrap}
+
+h1,h2{padding:0;font-weight:300;font-style:normal;color:#555;text-rendering:optimizeLegibility}
+h2{font-size:3em;margin:0.25em 0}
+button{display:inline-block;padding:0.46em 1.23em;outline:0}
+#main-container{position:relative;min-height:calc(100vh - 120px);padding-bottom:12%}
+#main-container.content-page #content,#main-container.registry-page #content,#main-container.photos-page #content{margin-top:0}
+#cover-image{position:absolute;left:0;right:0;top:0;bottom:0;background-position:center;background-size:cover}
+@media (max-width: 767px){
+    #cover-image.is-desktop{display:none}
+    #cover-image.is-mobile{display:block}
+}
+@media (min-width: 768px){
+    #cover-image.is-desktop{display:block}
+    #cover-image.is-mobile{display:none}
+}
+#main-container.registry-page #header,#main-container.photos-page #header{visibility:hidden !important;display:none !important}
+#main-container-background{position:fixed;left:0;right:0;top:0;bottom:0;background-position:center}
+#content{margin-top:60px}
+#content a{text-decoration:underline}
+#content #products-grid-app-root a{text-decoration:inherit}
+.theme-image-container,.theme-image-container-bottom{width:100%;padding-bottom:12%}
+.theme-image-container{position:relative}
+.theme-image-container-bottom{position:absolute;bottom:0}
+.theme-image-container-left,.theme-image-container-right{width:12%;max-width:132px;position:fixed;top:0;bottom:0}
+.theme-image-container-right{right:0}
+.theme-image,.theme-image-layer-top,.theme-image-bottom,.theme-image-left,.theme-image-right{position:absolute;top:0;right:0;bottom:0;width:100%;height:100%;background-size:contain;background-repeat:no-repeat}
+@media (min-width: 1200px){
+    #main-container{padding-bottom:120px}
+    .theme-image-container,.theme-image-container-bottom{padding:0;height:120px}
+}
+@media (max-width: 1199px){
+    .theme-image-left,.theme-image-right{visibility:hidden !important;display:none !important}
+    #content{margin-top:20px}
+}
+.wedding-page{overflow-x:hidden}
+ul{margin:0;padding:0}
+li{list-style:none}
+p{margin:0;padding:0;font-size:1.4em}
+h1,h2{padding:0;font-weight:300;font-style:normal;color:#555;text-rendering:optimizeLegibility}
+h2{font-size:3em;margin:0.25em 0}
+button{display:inline-block;padding:0.46em 1.23em;outline:0}
+#main-container{position:relative;min-height:calc(100vh - 120px);padding-bottom:12%}
+#main-container.content-page #content,#main-container.registry-page #content,#main-container.photos-page #content{margin-top:0}
+#cover-image{position:absolute;left:0;right:0;top:0;bottom:0;background-position:center;background-size:cover}
+@media (max-width: 767px){
+    #cover-image.is-desktop{display:none}
+    #cover-image.is-mobile{display:block}
+}
+@media (min-width: 768px){
+    #cover-image.is-desktop{display:block}
+    #cover-image.is-mobile{display:none}
+}
+#main-container-background{position:fixed;left:0;right:0;top:0;bottom:0;background-position:center}
+#content{margin-top:60px}
+#content a{text-decoration:underline}
+#content #products-grid-app-root a{text-decoration:inherit}
+.theme-image-container,.theme-image-container-bottom{width:100%;padding-bottom:12%}
+.theme-image-container{position:relative}
+.theme-image-container-bottom{position:absolute;bottom:0}
+.theme-image-container-left,.theme-image-container-right{width:12%;max-width:132px;position:fixed;top:0;bottom:0}
+.theme-image-container-right{right:0}
+.theme-image,.theme-image-layer-top,.theme-image-bottom,.theme-image-left,.theme-image-right{position:absolute;top:0;right:0;bottom:0;width:100%;height:100%;background-size:contain;background-repeat:no-repeat}
+@media (min-width: 1200px){
+    #main-container{padding-bottom:120px}
+    .theme-image-container,.theme-image-container-bottom{padding:0;height:120px}
+}
+@media (max-width: 1199px){
+    .theme-image-left,.theme-image-right{visibility:hidden !important;display:none !important}
+    #content{margin-top:20px}
+}
+
+/*main-nav*/
+.main-nav-container-inner:before,.main-nav-container-inner:after{content:" ";display:table}
+.main-nav-container-inner:after{clear:both}
+#main-nav-container{position:relative;padding-top:30px;padding-bottom:30px;width:100%;text-align:center;z-index:1}
+.main-nav-container-container{height:100px}
+#main-nav-container.fixed{position:fixed !important;left:0;top:0;right:0;background-color:white;-webkit-box-shadow:0,1px,1px,rgba(0,0,0,0.17);box-shadow:0,1px,1px,rgba(0,0,0,0.17)}
+.main-nav-container-inner{position:relative;max-width:90%;margin-left:auto;margin-right:auto}
+#main-nav{display:block}
+#main-nav>ul>li{position:relative;display:inline-block;padding:8px 12px;text-transform:uppercase}
+#main-nav>ul>li>ul{visibility:hidden;opacity:0;position:absolute;max-width:320px;text-align:left;background-color:white;padding:8px 24px 8px 12px;-webkit-border-radius:2px;-moz-border-radius:2px;-khtml-border-radius:2px;border-radius:2px;-webkit-box-shadow:0,1px,1px,rgba(0,0,0,0.17);box-shadow:0,1px,1px,rgba(0,0,0,0.17);-webkit-transition:opacity 0.3s ease;-o-transition:opacity 0.3s ease;transition:opacity 0.3s ease;z-index:10001}
+#main-nav>ul>li:hover>ul{visibility:visible !important;opacity:1}
+#main-nav>ul>li>ul>li{padding-top:4px;padding-bottom:4px;white-space:nowrap;text-overflow:ellipsis;overflow:hidden}
+button.main-nav{margin-left:6px;margin-right:6px}
+@media (max-width: 767px){#main-nav{visibility:hidden;display:none;margin-top:10px}}
+@media (min-width: 1200px){.main-nav-container-inner{max-width:70%}}
+.main-nav-container-container{min-height:0 !important;height:84px}
+#main-nav-container{display:flex;align-items:center;padding:0;height:84px}
+#main-nav li a{font-family:"Martel Sans";font-size:16px;font-style:normal;font-weight:700;color:#051B46}
+#main-nav li a:hover,#main-nav li a.selected{color:#A47E2D}
+#main-nav-container.fixed{background-color:rgba(249,249,249,0.9)}
+
+#header{position:relative;margin:auto}
+.header-background{visibility:hidden !important;display:none !important}
+#cover-image{position:relative;border:15px solid white;padding-bottom:50%;background-color:white;overflow:hidden;width:100%}
+@media (max-width: 767px){
+    #header{width:100%}
+    #cover-image{border-width:8px}
+    #cover-image.is-desktop{display:none}
+    #cover-image.is-mobile{display:block}
+}
+@media (min-width: 768px){
+    #header{width:90%}
+    #cover-image.is-desktop{display:block}
+    #cover-image.is-mobile{display:none}
+}
+@media (min-width: 1200px){#header{width:70%}}
+#wedding-title{margin:6px 0 8px 0;line-height:1}
+#wedding-date,#wedding-location{display:inline}
+#wedding-location{white-space:nowrap}
+.date-spacing{display:none}
+#wedding-countdown{margin:3px 1px;font-size:1.6em}
+#title-container{position:relative;padding:5px 10px 20px 0;text-align:center;background-color:white}
+.page{position:relative;margin-bottom:1.5em;width:70%}
+@media (max-width: 767px){
+    #wedding-title{font-size:28px !important}
+    #wedding-date-location{font-size:18px !important}
+    #title-container{padding-bottom:13px;padding-bottom:13px}
+    .page{width:90%}
+}
+@media (min-width: 768px){.page{width:90%}}
+@media (min-width: 1200px){.page{width:70%}}
+.section,.wedding-event-section,.photo-section{position:relative;overflow-wrap:break-word}
+.section-title,.wedding-event-section-title,.photo-section-title{max-width:840px;margin:0 auto;text-align:center;line-height:1.5}
+.section-title-border-top,.wedding-event-section-title-border-top,.photo-section-title-border-top{background-position:center;width:100%;max-width:840px;margin:0 auto}
+.section-title-border-bottom,.wedding-event-section-title-border-bottom,.photo-section-title-border-bottom{background-position:center;margin-bottom:24px;width:100%;max-width:840px;margin:0 auto 24px auto}
+.section-image-container,.wedding-event-section-image-container,.photo-section-image-container{text-align:center;margin-top:20px;margin-bottom:30px}
+.section-image,.wedding-event-section-image,.photo-section-image{border:16px solid white;max-height:640px;max-width:100%}
+.section-description,.item-description,.wedding-event-description,.wedding-event-section-description,.photo-section-description{text-align:left;max-width:840px;margin:0 auto;font-size:1.4em}
+.section-description p,.item-description p,.wedding-event-description p,.wedding-event-section-description p,.photo-section-description p,.section-description a,.item-description a,.wedding-event-description a,.wedding-event-section-description a,.photo-section-description a,.section-description a:hover,.item-description a:hover,.wedding-event-description a:hover,.wedding-event-section-description a:hover,.photo-section-description a:hover{font-size:1em}
+.section-description ol,.item-description ol,.wedding-event-description ol,.wedding-event-section-description ol,.photo-section-description ol{margin:0;padding:0}
+.section-description ol li,.item-description ol li,.wedding-event-description ol li,.wedding-event-section-description ol li,.photo-section-description ol li{text-align:left;list-style:decimal}
+.section-description ul li,.item-description ul li,.wedding-event-description ul li,.wedding-event-section-description ul li,.photo-section-description ul li{text-align:left;list-style:disc}
+.section-items,.wedding-event-section-items,.photo-section-items{max-width:840px;margin:auto}
+.section-separator,.wedding-event-section-separator,.photo-section-separator{max-width:840px;margin:40px auto;background-size:contain}
+.section-separator:last-of-type,.wedding-event-section-separator:last-of-type,.photo-section-separator:last-of-type{visibility:hidden !important;display:none !important}
+.anchor{padding-top:120px;margin-top:-120px;display:inline-block;height:1px}
+@media (max-width: 767px){
+    .section-title-border-bottom,.wedding-event-section-title-border-bottom,.photo-section-title-border-bottom{margin-bottom:10px}
+    .section-image-container,.wedding-event-section-image-container,.photo-section-image-container{margin-top:10px}
+    .section-separator,.wedding-event-section-separator,.photo-section-separator{margin:30px auto}
+    .section-image,.wedding-event-section-image,.photo-section-image{border-width:6px}
+}
+.item,.wedding-event-item{position:relative}
+.item-title,.wedding-event-title{text-align:center}
+.item-image-container,.wedding-event-image-container{text-align:center;margin-top:20px;margin-bottom:30px}
+.item-image,.wedding-event-image{border:16px solid white;max-height:640px;max-width:100%}
+.item-description p:not(:first-of-type),.wedding-event-description p:not(:first-of-type){margin-top:15px}
+.wedding-event-button-container{text-align:center;margin-top:12px}
+.wedding-event-button-container a>button{margin-left:6px}
+.wedding-event-button-container a:first-child>button{margin-left:0}
+.item-separator,.wedding-event-separator{margin-top:20px;margin-bottom:20px}
+.item-separator:last-of-type,.wedding-event-separator:last-of-type{visibility:hidden !important;display:none !important}
+@media (max-width: 767px){
+    .item-title,.wedding-event-title{font-size:20px !important}
+    .item-image,.wedding-event-image{border-width:6px}
+}
+.wedding-event-description{white-space:pre-line;text-align:center}
+.wedding-event-address,.wedding-event-venue,.wedding-event-date{text-align:center;font-size:1.5em;line-height:2}
+.wedding-event-button-container button{display:inline-block}
+.wedding-event-separator:last-of-type{display:block;visibility:visible}
+
+
+@font-face {
+  font-family: 'Libre Baskerville';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Libre Baskerville'), local('LibreBaskerville-Regular'), url(../fonts/font-librebaskerville-regular-latinext.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Libre Baskerville';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Libre Baskerville'), local('LibreBaskerville-Regular'), url(../fonts/font-librebaskerville-regular-latin.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* devanagari */
+@font-face {
+  font-family: 'Martel Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Martel Sans Regular'), local('MartelSans-Regular'), url(../fonts/font-martelsans-regular-devanagari.woff2) format('woff2');
+  unicode-range: U+0900-097F, U+1CD0-1CF6, U+1CF8-1CF9, U+200C-200D, U+20A8, U+20B9, U+25CC, U+A830-A839, U+A8E0-A8FB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Martel Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Martel Sans Regular'), local('MartelSans-Regular'), url(../fonts/font-martelsans-regular-latinext.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Martel Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Martel Sans Regular'), local('MartelSans-Regular'), url(../fonts/font-martelsans-regular-latin.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+
+.registry-wedding-title h1{margin-bottom:16px;color:inherit;font-size:42px !important;font-weight:bold;font-style:normal;font-stretch:normal;line-height:normal;letter-spacing:3.3px;text-align:center}
+@media (max-width: 568px){.registry-wedding-title h1{font-size:30px !important;font-weight:bold;font-style:normal;font-stretch:normal;line-height:1.5;letter-spacing:1.5px;text-align:center;color:inherit}}
+.registry-note-description{margin:40px auto;font-weight:normal;font-style:normal;font-stretch:normal;line-height:normal;letter-spacing:normal;text-align:center}
+.registry-note-description,.registry-note-description>p{font-size:21px !important}
+.registry-page{font-family:union-primary-font, union-sans-serif, -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;font-size:16px}
+.registry-page button{border:inherit !important}
+.registry-page button:hover{background-color:inherit}
+.registry-page #products-grid-app-root{color:black}
+.registry-page .page{width:100% !important}
+.registry-page .page .registry-note-description{width:90%}
+@media (min-width: 1200px){.registry-page .page .registry-note-description{width:70%}}
+.photo-section-title-container{position:relative}
+.photo-section-title-container button{position:absolute;bottom:14px;left:4px}
+.photo-section-title{white-space:nowrap;text-overflow:ellipsis;overflow:hidden}
+.photo-section-title-border-top{visibility:hidden}
+.photo-section-title-border-bottom{margin-bottom:6px;visibility:hidden}
+.photo-section-items{max-width:none}
+.photo-section .col-sm-4{margin:0;padding-left:4px;padding-right:4px}
+.photo-item{position:relative;margin-top:8px;border:10px solid white;-webkit-box-shadow:0 1px 1px rgba(0,0,0,0.17);-moz-box-shadow:0 1px 1px rgba(0,0,0,0.17);box-shadow:0 1px 1px rgba(0,0,0,0.17)}
+img.photo-image{cursor:pointer;width:100%;height:auto}
+
+
+.text-left{text-align:left}
+.text-center{text-align:center}
+.text-right{text-align:right}
+.text-justify{text-align:justify}
+#main-container{padding-bottom:0 !important}
+.theme-image-container-bottom{height:0;padding-bottom:0}
+#title-container{background:transparent;padding-top:10px;padding-bottom:10px;padding-right:0;margin:0 5%}
+#cover-image{border:0px !important;position:relative}
+#cover-image #title-container{position:absolute;top:50%;left:5%;right:5%;z-index:10;margin:0;color:#fff;transform:translateY(-50%);padding:0 !important}
+h2,#wedding-date-location,#wedding-countdown{font-size:1.25rem !important}
+#content{margin-top:10px}
+.section-title-border-bottom,.wedding-event-section-title-border-bottom,.registry-section-title-border-bottom,.album-section-title-border-bottom .photo-section-title-border-bottom{margin:0 auto 15px auto}
+.section-image-container,.wedding-event-section-image-container,.registry-section-image-container,.photo-section-image-container{margin-top:20px;margin-bottom:20px}
+.item-title,.wedding-event-title{margin-bottom:15px}
+.item-image-container,.wedding-event-image-container{margin-top:20px;margin-bottom:20px}
+.item-image,.wedding-event-image{border:0px;max-height:800px}
+.section-separator,.wedding-event-section-separator,.registry-section-separator,.photo-section-separator{margin:20px auto 20px auto}
+.item-separator,.wedding-event-separator{margin-top:15px;margin-bottom:15px}
+.section-title-border-top,.wedding-event-section-title-border-top,.registry-section-title-border-top,.photo-section-title-border-top{margin:10px auto 10px auto}
+.section-title-border-bottom,.wedding-event-section-title-border-bottom,.registry-section-title-border-bottom,.album-section-title-border-bottom .photo-section-title-border-bottom{margin:10px auto 15px auto}
+.section-description,.item-description,.wedding-event-description,.registry-note,.wedding-event-section-description,.registry-section-description,.photo-section-description{text-align:center}
+.theme-image-container-bottom{position:absolute;bottom:0}
+.theme-image-container-bottom{position:absolute;bottom:0}
+.wedding-event-button-container{margin-top:15px;margin-bottom:15px}
+.content{margin-top:20px}
+button{border-radius:2px;font-size:18px;line-height:1.44;letter-spacing:1px;transition:all .25s;min-width:146px;min-height:48px}
+.item-image,.section-image,.wedding-event-section-image,.registry-section-image,.photo-section-image{border:0px !important;background:transparent}
+
+@media (max-width: 767px){  
+    #separator{display:none}
+    #wedding-date{display:block}
+    #wedding-location{display:block}
+}
+@media only screen and (min-width: 1201px){
+    h1,#wedding-title{font-size:3.5rem;line-height:1.4 !important}
+    .section-title,div[class*='-section-title']{font-size:2.5rem}
+    .item-title{font-size:1.375rem !important}
+    div[class*='-description'],div[class*='-description'] p,div[class*='-note'],div[class*='-address'],div[class*='-venue'],div[class*='-date']{font-size:1rem}
+}
+@media only screen and (min-width: 768px) and (max-width: 1200px){
+    h1,#wedding-title{font-size:3rem !important;line-height:1.4 !important}
+    .section-title,div[class*='-section-title']{font-size:2.5rem}
+    .item-title{font-size:1.375em !important}
+    div[class*='-description'],div[class*='-description'] p,div[class*='-note'],div[class*='-address'],div[class*='-venue'],div[class*='-date']{font-size:1rem}
+}
+@media only screen and (max-width: 767px){
+    h1,#wedding-title{font-size:1.75em !important;line-height:1.4 !important}
+    .section-title,div[class*='-section-title']{font-size:1.75em}
+    .item-title{font-size:1.375em !important}
+    div[class*='-description'],div[class*='-description'] p,div[class*='-note'],div[class*='-address'],div[class*='-venue'],div[class*='-date']{font-size:1rem}
+}
+button{font-family:"PT Serif";font-style:normal;font-weight:normal;color:#FFFFFF;border-color:#051B46;border-style:solid;border-width:1px;background-color:#051B46}
+button:hover{background-color:#A47E2D}
+#wedding-title{font-family:"Libre Baskerville";font-size:3.5rem;font-style:normal;font-weight:700;color:#051B46}
+#wedding-date-location{font-family:"Martel Sans";font-size:16px;font-style:normal;font-weight:normal;color:#A47E2D}
+#main-container-background{background-image:url(../img/background_image_top.png),url(../img/background_image.jpg);background-repeat:no-repeat;background-size:100% auto, 100% 100%;background-position:top center}
+.section-title,.wedding-event-section-title,.photo-section-title,.registry-section-title{font-family:"Libre Baskerville";font-size:2.5rem;font-style:normal;font-weight:normal;color:#051B46}
+.section-separator,.wedding-event-section-separator,.photo-section-separator,.registry-section-separator{height:1px}
+.item-title,.wedding-event-title{font-family:"Martel Sans";font-size:30px;font-style:normal;font-weight:normal;color:#A47E2D}
+.section-separator{background-position:center;background-image:url(../img/section_separator.jpg);height:40px;background-repeat:no-repeat}
+
+
+.item-title { color:#A47E2D;font-family:Martel Sans;font-size:30px;font-style:normal; }  
+div[class*='section-title'] { color:#051B46;font-family:Libre Baskerville;font-size:2.5rem;font-style:normal; }  
+#wedding-date-location,#wedding-countdown { color:#A47E2D;font-family:Martel Sans;font-size:16px;font-style:normal; }  
+#wedding-title { color:#051B46;font-family:Libre Baskerville;font-size:3.5rem;font-style:normal; }
