@@ -63,6 +63,7 @@
             <p>
               Archmage Experiment Assistant
             </p>
+
             <h3><span id="Gear">Gear</span></h3>
             <p>
               At 1<sup>st</sup> level, a cleric starts with a melee weapon (1d4
@@ -214,6 +215,7 @@
                 </tbody>
               </table>
             </div>
+
             <h3>
               <span id="Level_Progression">Level Progression</span>
             </h3>
@@ -432,6 +434,7 @@
               This class also gets three talents/domains, listed below. It does
               not gain more at higher levels.
             </p>
+
             <h3><span id="Stats">Stats</span></h3>
             <div style="overflow-x: auto; max-width: 100%; display: block;">
               <table border="1" cellspacing="0">
@@ -534,25 +537,47 @@
                 </tbody>
               </table>
             </div>
+
             <h3><span id="Basic_Attacks">Basic Attacks</span></h3>
-            <h4><span id="Melee_Attack">Melee Attack</span></h4>
-            <p>At-Will</p>
-            <p><b>Target</b>: One enemy</p>
-            <p><b>Attack</b>: Strength + Level vs. AC</p>
-            <p><b>Hit</b>: WEAPON + Strength damage</p>
-            <p>
-              <b>Miss</b>:
-              <a href="https://www.13thagesrd.com/combat-rules#TOC-Damage1"
-                >Damage</a
-              >
-              equal to your level
-            </p>
-            <h4><span id="Ranged_Attack">Ranged Attack</span></h4>
-            <p>At-Will</p>
-            <p><b>Target</b>: One enemy</p>
-            <p><b>Attack</b>: Dexterity + Level vs. AC</p>
-            <p><b>Hit</b>: WEAPON + Dexterity damage</p>
-            <p><b>Miss</b>: —</p>
+            <div style="overflow-x: auto; max-width: 100%; display: block;">
+              <table border="1" cellspacing="0">
+                <thead>
+                  <tr style="text-align: center;">
+                    <th>&nbsp;</th>
+                    <th><b>Melee Attack</b></th>
+                    <th><b>Ranged Attack</b></th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr style="text-align: center;">
+                    <td><b>Timing</b></td>
+                    <td>At-will</td>
+                    <td>At-will</td>
+                  </tr>
+                  <tr style="text-align: center;">
+                    <td><b>Target</b></td>
+                    <td>1 enemy</td>
+                    <td>1 enemy</td>
+                  </tr>
+                  <tr style="text-align: center;">
+                    <td><b>Attacks</b></td>
+                    <td>(Strength mod + Level) vs. AC</td>
+                    <td>(Dexterity mod + Level) vs. AC</td>
+                  </tr>
+                  <tr style="text-align: center;">
+                    <td><b>Hit</b></td>
+                    <td>(Weapon + Strength mod) damage</td>
+                    <td>(Weapon + Dexterity mod) damage</td>
+                  </tr>
+                  <tr style="text-align: center;">
+                    <td><b>Miss</b></td>
+                    <td>(Level) damage</td>
+                    <td>—</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
             <h3>
               <span id="Class_Features">Class Features</span>
             </h3>
@@ -578,7 +603,8 @@
                     >Free</a
                   >
                   recovery</i
-                >: The cleric can recover hp as if they were using a recovery (without actually spending the recovery).
+                >: The cleric can recover hp as if they were using a recovery
+                (without actually spending the recovery).
               </li>
               <li>
                 <i>Heal using a recovery</i>: The character targeted with a
@@ -622,100 +648,114 @@
                 >rituals</a
               >.
             </p>
+
             <h3><span id="Class_Talents">Class Talents</span></h3>
             <p>
               Clerics have three talents/domains, each providing an ability that
               can be improved by feats. It also provides an invocation you can
               use as a quick action once per day, per battle, per party.
             </p>
-            <h4>
-              <span id="Domain_LifeDeath">Domain: Life/Death</span>
-            </h4>
-            <p>
-              You and your nearby allies gain a +1 bonus to death saves.
-            </p>
-            <p>
-              <b>Invocation of Life/Death</b>: This battle, you and each of your
-              allies can each separately add the
-              <a
-                href="https://www.13thagesrd.com/combat-rules#TOC-Escalation-Die"
-                >escalation die</a
-              >
-              to a single save made by that character. In addition, you and your
-              allies do not die from hp damage when your negative hp equal half
-              your normal hp. Instead, you die when your negative hp equal your
-              full hp.
-            </p>
-            <p>
-              <b><i>Adventurer Feat</i></b> The death save bonus increases to
-              +2.
-            </p>
-            <p class="lvl5">
-              <b><i>Champion Feat</i></b> Each battle, the first time an ally
-              near you becomes
-              <a href="https://www.13thagesrd.com/combat-rules#TOC-Staggered"
-                >staggered</a
-              >, that ally immediately heals hp equal to twice your level.
-            </p>
-            <p class="lvl8">
-              <b><i>Epic Feat</i></b> Your first use of the
-              <i>resurrection</i> spell is free, and doesn’t count against your
-              total.
-            </p>
-            <h4>
-              <span id="Domain_SunAnti-Undead">Domain: Sun/Anti-Undead</span>
-            </h4>
-            <p>
-              Every attack you make deals holy damage instead of other types of
-              damage unless you choose otherwise for a specific attack.
-            </p>
-            <p>
-              <b><i>Adventurer Feat</i></b> If your attack already deals holy
-              damage, +1 damage.
-            </p>
-            <p class="lvl5">
-              <b><i>Champion Feat</i></b> If your attack already deals holy
-              damage, +2 damage. You gain a +2 bonus to all defenses against
-              attacks by undead.
-            </p>
-            <p class="lvl8">
-              <b><i>Epic Feat</i></b> If your attack already deals holy damage,
-              +3 damage. The invocation also affects your allies’ daily spells.
-            </p>
-            <p>
-              <b>Invocation of Sun/Anti-Undead</b>: When you cast a daily cleric
-              spell this battle, roll a d6. If you roll less than or equal to
-              the escalation die, you regain the use of that daily spell after
-              the battle.
-            </p>
-            <h4>
-              <span id="Domain_TrickeryIllusion"
-                >Domain: Trickery/Illusion</span
-              >
-            </h4>
-            <p>
-              Once per battle, as a quick action when you are engaged with an
-              enemy, roll a d20 (your ‘trick die’).
-            </p>
-            <p>
-              As a free action before the start of your next turn, give your
-              trick die to a nearby ally or enemy who is about to make an attack
-              roll. The trick die result becomes the natural result of their
-              roll instead.
-            </p>
-            <p class="lvl5">
-              <b><i>Champion Feat</i></b> Your trick die can be used for any one
-              d20 roll, not just an attack.
-            </p>
-            <p class="lvl8">
-              <b><i>Epic Feat</i></b> You get another trick die roll to use each
-              battle the first time the escalation die reaches 3+.
-            </p>
-            <p>
-              <b>Invocation of Trickery/Illusion</b>: This battle, attacks
-              against you by enemies that moved to engage you during their turn
-              miss on natural odd rolls.
-            </p>
+
+            <div style="overflow-x: auto; max-width: 100%; display: block;">
+              <table border="1" cellspacing="0">
+                <thead>
+                  <tr style="text-align: center;">
+                    <th><b>Domain</b></th>
+                    <th><b>Life/Death</b></th>
+                    <th><b>Sun/Anti-Undead</b></th>
+                    <th><b>Trickery/Illusion</b></th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr style="text-align: left;">
+                    <td><b>Description</b></td>
+                    <td>
+                      You and your nearby allies gain a +1 bonus to death saves.
+                    </td>
+                    <td>
+                      Every attack you make deals holy damage instead of other
+                      types of damage unless you choose otherwise for a specific
+                      attack.
+                    </td>
+                    <td>
+                      Once per battle, as a quick action when you are engaged
+                      with an enemy, roll a d20 (your ‘trick die’).<br />As a
+                      free action before the start of your next turn, give your
+                      trick die to a nearby ally or enemy who is about to make
+                      an attack roll. The trick die result becomes the natural
+                      result of their roll instead.
+                    </td>
+                  </tr>
+                  <tr style="text-align: left;">
+                    <td><b>Invocation</b></td>
+                    <td>
+                      This battle, you and each of your allies can each
+                      separately add the
+                      <a
+                        href="https://www.13thagesrd.com/combat-rules#TOC-Escalation-Die"
+                        >escalation die</a
+                      >
+                      to a single save made by that character. In addition, you
+                      and your allies do not die from hp damage when your
+                      negative hp equal half your normal hp. Instead, you die
+                      when your negative hp equal your full hp.
+                    </td>
+                    <td>
+                      When you cast a daily cleric spell this battle, roll a d6.
+                      If you roll less than or equal to the escalation die, you
+                      regain the use of that daily spell after the battle.
+                    </td>
+                    <td>
+                      This battle, attacks against you by enemies that moved to
+                      engage you during their turn miss on natural odd rolls.
+                    </td>
+                  </tr>
+                  <tr style="text-align: left;">
+                    <td><b>Adventure Feat</b></td>
+                    <td>The death save bonus increases to +2.</td>
+                    <td>
+                      If your attack already deals holy damage, +1 damage.
+                    </td>
+                    <td>&mdash;</td>
+                  </tr>
+                  <tr class="lvl5" style="text-align: left;">
+                    <td><b>Champion Feat</b></td>
+                    <td>
+                      Each battle, the first time an ally near you becomes
+                      <a
+                        href="https://www.13thagesrd.com/combat-rules#TOC-Staggered"
+                        >staggered</a
+                      >, that ally immediately heals hp equal to twice your
+                      level.
+                    </td>
+                    <td>
+                      If your attack already deals holy damage, +2 damage. You
+                      gain a +2 bonus to all defenses against attacks by undead.
+                    </td>
+                    <td>
+                      Your trick die can be used for any one d20 roll, not just
+                      an attack.
+                    </td>
+                  </tr>
+                  <tr class="lvl8" style="text-align: left;">
+                    <td><b>Epic Feat</b></td>
+                    <td>
+                      Your first use of the <i>resurrection</i> spell is free,
+                      and doesn’t count against your total.
+                    </td>
+                    <td>
+                      If your attack already deals holy damage, +3 damage. The
+                      invocation also affects your allies’ daily spells.
+                    </td>
+                    <td>
+                      You get another trick die roll to use each battle the
+                      first time the escalation die reaches 3+.
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
             <h3>
               <span id="1st_Level_Spells">1<sup>st</sup> Level Spells</span>
             </h3>
@@ -810,24 +850,20 @@
             </h4>
             <p>Ranged spell; At-Will</p>
             <p><b>Target</b>: One nearby enemy</p>
-            <p>
-              <b>Attack</b>: Wisdom + Level vs. PD
-            </p>
-            <p><b>Hit</b>: 1d6 + Wisdom holy damage.</p>
-            <p>
-              <b>Miss</b>: Damage equal to your level.
-            </p>
+            <p><b>Attack</b>: (Wisdom mod + Level) vs. PD</p>
+            <p><b>Hit</b>: (1d6 + Wisdom mod) holy damage.</p>
+            <p><b>Miss</b>: Damage equal to your level.</p>
             <p class="lvl3" style="margin-left: 20px;">
-              <b>3<sup>rd</sup> level spell</b>: 3d6 damage.
+              <b>3<sup>rd</sup> level spell</b>: (3d6) damage.
             </p>
             <p class="lvl5" style="margin-left: 20px;">
-              <b>5<sup>th</sup> level spell</b>: 6d6 damage.
+              <b>5<sup>th</sup> level spell</b>: (6d6) damage.
             </p>
             <p class="lvl7" style="margin-left: 20px;">
-              <b>7<sup>th</sup> level spell</b>: 6d10 damage.
+              <b>7<sup>th</sup> level spell</b>: (6d10) damage.
             </p>
             <p class="lvl9" style="margin-left: 20px;">
-              <b>9<sup>th</sup> level spell</b>: 8d10 damage.
+              <b>9<sup>th</sup> level spell</b>: (8d10) damage.
             </p>
             <p>
               <b><i>Adventurer Feat</i></b> The spell also deals +1d6 damage
@@ -854,7 +890,8 @@
               effect.
             </p>
             <p>
-              <b>Cast for power</b>: One nearby ally gains a +2 bonus to AC this battle.
+              <b>Cast for power</b>: One nearby ally gains a +2 bonus to AC this
+              battle.
             </p>
             <p>
               <b>Cast for broad Effect</b>: Choose up to three nearby creatures
@@ -893,27 +930,27 @@
             </h4>
             <p>Ranged spell; Once per battle</p>
             <p><b>Target</b>: One nearby enemy</p>
-            <p><b>Attack</b>: Wisdom + Level vs. MD</p>
+            <p><b>Attack</b>: (Wisdom mod + Level) vs. MD</p>
             <p>
-              <b>Hit</b>: 4d6 + Wisdom holy damage, and your nearby ally with
-              the fewest hp gains a +4 bonus to AC until the end of your next
-              turn.
+              <b>Hit</b>: (4d6 + Wisdom mod) holy damage, and your nearby ally
+              with the fewest hp gains a +4 bonus to AC until the end of your
+              next turn.
             </p>
             <p>
               <b>Miss</b>: Your nearby ally with the fewest hp gains a +2 bonus
               to AC until the end of your next turn.
             </p>
             <p class="lvl3" style="margin-left: 20px;">
-              <b>3<sup>rd</sup> level spell</b>: 7d6 damage.
+              <b>3<sup>rd</sup> level spell</b>: (7d6) damage.
             </p>
             <p class="lvl5" style="margin-left: 20px;">
-              <b>5<sup>th</sup> level spell</b>: 7d10 damage.
+              <b>5<sup>th</sup> level spell</b>: (7d10) damage.
             </p>
             <p class="lvl7" style="margin-left: 20px;">
-              <b>7<sup>th</sup> level spell</b>: 10d12 damage.
+              <b>7<sup>th</sup> level spell</b>: (10d12) damage.
             </p>
             <p class="lvl9" style="margin-left: 20px;">
-              <b>9<sup>th</sup> level spell</b>: 2d8 x 10 damage.
+              <b>9<sup>th</sup> level spell</b>: (2d8 x 10) damage.
             </p>
             <p class="lvl5">
               <b><i>Champion Feat</i></b> You also gain the bonus to AC until
@@ -926,7 +963,7 @@
               <b>Target</b>: 1d4 nearby undead creatures, each with 55 hp or
               fewer.
             </p>
-            <p><b>Attack</b>: Wisdom + Charisma + Level vs. MD</p>
+            <p><b>Attack</b>: (Wisdom mod + Charisma mod + Level) vs. MD</p>
             <p>
               <b>Hit</b>: The target is
               <a href="https://www.13thagesrd.com/combat-rules#TOC-Dazed"
@@ -935,18 +972,18 @@
               until end of your next turn.
             </p>
             <p>
-              <b>Hit by 4+</b>: 1d10 x your level holy damage, and the target is
+              <b>Hit by 4+</b>: (1d10 x Level) holy damage, and the target is
               dazed until end of your next turn.
             </p>
             <p>
-              <b>Hit by 8+</b>: Against non-mooks, holy damage equal to half the
-              target’s maximum hp, and the target is dazed (save ends). Against
-              mooks, the +8 result now deals 4d10 x your level holy damage.
+              <b>Hit by 8+</b>: Against non-mooks, (half target's max hp) holy
+              damage, and the target is dazed (save ends). Against mooks, the +8
+              result now deals (4d10 x Level) holy damage.
             </p>
             <p>
               <b>Hit by 12+ or Natural 20</b>: Against non-mooks, the target is
-              destroyed. Against mooks, the +12 result now deals 4d20 x your
-              level holy damage
+              destroyed. Against mooks, the +12 result now deals (4d20 x Level)
+              holy damage
             </p>
             <p class="lvl3" style="margin-left: 20px;">
               <b>3<sup>rd</sup> level spell</b>: Target with 90 hp or fewer.
@@ -979,7 +1016,7 @@
               <h4><span id="Cause_Fear">Cause Fear</span></h4>
               <p>Ranged spell; Daily</p>
               <p><b>Target</b>: One nearby enemy with 75 hp or fewer</p>
-              <p><b>Attack</b>: Wisdom + Level vs. MD</p>
+              <p><b>Attack</b>: (Wisdom mod + Level) vs. MD</p>
               <p>
                 <b>Hit</b>: The target is
                 <a href="https://www.13thagesrd.com/combat-rules#TOC-Weakened"
@@ -1069,17 +1106,17 @@
                 >
                 enemies
               </p>
-              <p><b>Attack</b>: Wisdom + Level vs. MD</p>
-              <p><b>Hit</b>: 5d10 + Wisdom holy damage.</p>
-              <p><b>Miss</b>: Holy damage equal to your level.</p>
+              <p><b>Attack</b>: (Wisdom mod + Level) vs. MD</p>
+              <p><b>Hit</b>: (5d10 + Wisdom mod) holy damage.</p>
+              <p><b>Miss</b>: (Level) holy damage.</p>
               <p class="lvl5" style="margin-left: 20px;">
-                <b>5<sup>th</sup> level spell</b>: 8d10 damage.
+                <b>5<sup>th</sup> level spell</b>: (8d10) damage.
               </p>
               <p class="lvl7" style="margin-left: 20px;">
-                <b>7<sup>th</sup> level spell</b>: 2d6 x 10 damage.
+                <b>7<sup>th</sup> level spell</b>: (2d6 x 10) damage.
               </p>
               <p class="lvl9" style="margin-left: 20px;">
-                <b>9<sup>th</sup> level spell</b>: 2d10 x 10 damage.
+                <b>9<sup>th</sup> level spell</b>: (2d10 x 10) damage.
               </p>
               <p class="lvl5">
                 <b><i>Champion Feat</i></b> The spell now deals half damage on a
@@ -1210,14 +1247,14 @@
                 recovery. Then make the following attack.
               </p>
               <p><b>Target</b>: Up to two nearby enemies</p>
-              <p><b>Attack</b>: Wisdom + Level vs. MD</p>
-              <p><b>Hit</b>: 7d8 + Charisma holy damage.</p>
+              <p><b>Attack</b>: (Wisdom mod + Level) vs. MD</p>
+              <p><b>Hit</b>: (7d8 + Charisma mod) holy damage.</p>
               <p><b>Miss</b>: Half damage.</p>
               <p class="lvl7" style="margin-left: 20px;">
-                <b>7<sup>th</sup> level spell</b>: 8d12 damage.
+                <b>7<sup>th</sup> level spell</b>: (8d12) damage.
               </p>
               <p class="lvl9" style="margin-left: 20px;">
-                <b>9<sup>th</sup> level spell</b>: 2d8 x 10 damage.
+                <b>9<sup>th</sup> level spell</b>: (2d8 x 10) damage.
               </p>
             </div>
             <div class="lvl7">
@@ -1291,9 +1328,9 @@
               </p>
               <p>
                 The third time you cast the spell it has to be as a ritual. The
-                spell chews you up and leaves you with only a few hp,
-                then gnaws at the person you have resurrected, who takes days to
-                recover well enough to qualify as an adventurer or combatant.
+                spell chews you up and leaves you with only a few hp, then gnaws
+                at the person you have resurrected, who takes days to recover
+                well enough to qualify as an adventurer or combatant.
               </p>
               <p>
                 The fourth time you cast the spell it nearly kills you. The
