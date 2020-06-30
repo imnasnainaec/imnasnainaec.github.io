@@ -606,28 +606,16 @@
                 >: The cleric can recover hp as if they were using a recovery
                 (without actually spending the recovery).
               </li>
-              <li>
-                <i>Heal using a recovery</i>: The character targeted with a
-                healing effect uses one of their recoveries and rolls their own
-                recovery dice.
-              </li>
-              <li>
-                <i>Invocation</i>: A
-                <a
-                  href="https://www.13thagesrd.com/combat-rules#TOC-Standard-Move-and-Quick-Actions"
-                  >quick action</a
-                >
-                that offers advantages in battle. It can be made once a day.
-                More than one cleric in a party cannot use the same invocation
-                during a battle.
-              </li>
             </ul>
             <h4><span id="Heal">Heal</span></h4>
             <p><b>Range</b>: Close-quarters spell</p>
             <p><b>Special</b>: You can use this spell twice per battle.</p>
-            <p>Quick action to cast (1/round)</p>
+            <p>Quick action to cast (once per round)</p>
             <p><b>Target</b>: You or one ally you are next to</p>
-            <p><b>Effect</b>: The target can heal using a recovery.</p>
+            <p>
+              <b>Effect</b>: The target can heal using a recovery (rolls their
+              own recovery dice).
+            </p>
             <p>
               <b><i>Adventurer Feat</i></b> The target can now be a nearby ally
               instead of an ally you are next to.
@@ -653,7 +641,8 @@
             <p>
               Clerics have three talents/domains, each providing an ability that
               can be improved by feats. It also provides an invocation you can
-              use as a quick action once per day, per battle, per party.
+              use as a quick action once per day. More than one cleric in a
+              party cannot use the same invocation during a battle.
             </p>
 
             <div style="overflow-x: auto; max-width: 100%; display: block;">
@@ -757,258 +746,276 @@
             </div>
 
             <h3>
-              <span id="1st_Level_Spells">1<sup>st</sup> Level Spells</span>
+              <span id="1st_Level_Spells"
+                >1<sup>st</sup> Level Effect/Power Spells</span
+              >
             </h3>
-            <h4><span id="Bless">Bless</span></h4>
-            <p>Ranged spell; Daily</p>
-            <p>Quick action to cast</p>
-            <p>
-              <b>Effect</b>: You can cast this spell for power or for broad
-              effect.
-            </p>
-            <p>
-              <b>Cast for power</b>: One nearby ally gains a +2 attack bonus
-              until the end of the battle.
-            </p>
-            <p>
-              <b>Cast for broad Effect</b>: Choose up to three nearby creatures
-              (including you); each target gains a +1 attack bonus until the end
-              of the battle.
-            </p>
-            <p class="lvl3" style="margin-left: 20px;">
-              <b>3<sup>rd</sup> level spell</b>: Each target also gains 1d10
-              temporary hp per point of the attack bonus.
-            </p>
-            <p class="lvl5" style="margin-left: 20px;">
-              <b>5<sup>th</sup> level spell</b>: Each target also gains 2d10
-              temporary hp instead of 1d10 per point of the attack bonus.
-            </p>
-            <p class="lvl7" style="margin-left: 20px;">
-              <b>7<sup>th</sup> level spell</b>: All attack bonuses granted by
-              the spell increase by +1.
-            </p>
-            <p class="lvl9" style="margin-left: 20px;">
-              <b>9<sup>th</sup> level spell</b>: Each target also gains 3d10
-              temporary hp instead of 2d10 per point of the attack bonus.
-            </p>
-            <h4><span id="Cure_Wounds">Cure Wounds</span></h4>
-            <p>Ranged spell; Daily</p>
-            <p>Quick action to cast</p>
-            <p>
-              <b>Effect</b>: You or a nearby ally can heal using a free
-              recovery.
-            </p>
-            <p class="lvl3" style="margin-left: 20px;">
-              <b>3<sup>rd</sup> level spell</b>: The target can also roll a save
-              against each save ends effect.
-            </p>
-            <p class="lvl5" style="margin-left: 20px;">
-              <b>5<sup>th</sup> level spell</b>: This spell is now recharge 16+
-              after battle instead of daily.
-            </p>
-            <p class="lvl7" style="margin-left: 20px;">
-              <b>7<sup>th</sup> level spell</b>: The target can heal using two
-              free recoveries instead of one.
-            </p>
-            <p class="lvl9" style="margin-left: 20px;">
-              <b>9<sup>th</sup> level spell</b>: This spell is now recharge 11+
-              instead.
-            </p>
-            <h4>
-              <span id="Hammer_of_Faith">Hammer of Faith</span>
-            </h4>
-            <p><b>Range</b>: Close-quarters spell</p>
-            <p>Daily</p>
-            <p>
-              <b>Effect</b>: Until the end of the battle, your basic melee
-              attacks use d12s as their base weapon damage dice.
-            </p>
-            <p class="lvl3" style="margin-left: 20px;">
-              <b>3<sup>rd</sup> level spell</b>: The spell now requires only a
-              quick action to cast.
-            </p>
-            <p class="lvl5" style="margin-left: 20px;">
-              <b>5<sup>th</sup> level spell</b>: You deal half damage on misses
-              with basic melee attacks this battle.
-            </p>
-            <p class="lvl7" style="margin-left: 20px;">
-              <b>7<sup>th</sup> level spell</b>: Once during the battle, you can
-              reroll a basic melee attack.
-            </p>
-            <p class="lvl9" style="margin-left: 20px;">
-              <b>9<sup>th</sup> level spell</b>: For the rest of the battle,
-              change any of your basic melee attack damage dice rolls that are
-              less than the
-              <a
-                href="https://www.13thagesrd.com/combat-rules#TOC-Escalation-Die"
-                >escalation die</a
+
+            <div style="overflow-x: auto; max-width: 100%; display: block;">
+              <table border="1" cellspacing="0">
+                <thead>
+                  <tr style="text-align: center;">
+                    <th><b>Spell</b></th>
+                    <th><b>Bless</b></th>
+                    <th><b>Cure Wounds</b></th>
+                    <th><b>Arcane Hammer</b></th>
+                    <th><b>Arcane Shield</b></th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr style="text-align: left;">
+                    <td><b>Timing</b></td>
+                    <td>Daily; Quick action</td>
+                    <td>Daily; Quick action</td>
+                    <td>Daily</td>
+                    <td>Daily; Quick action</td>
+                  </tr>
+                  <tr style="text-align: left;">
+                    <td><b>Type</b></td>
+                    <td>Ranged</td>
+                    <td>Ranged</td>
+                    <td>Close-quarters</td>
+                    <td>Ranged</td>
+                  </tr>
+                  <tr style="text-align: left;">
+                    <td><b>Effect (xor Power)</b></td>
+                    <td>
+                      Choose up to three nearby creatures (including you); each
+                      target gains a +1 attack bonus until the end of the
+                      battle. <b>XOR</b> One nearby ally gains a +2 attack bonus
+                      until the end of the battle.
+                    </td>
+                    <td>
+                      You or a nearby ally can heal using a free recovery.
+                    </td>
+                    <td>
+                      Until the end of the battle, your basic melee attacks use
+                      d12s as their base weapon damage dice.
+                    </td>
+                    <td>
+                      Choose up to three nearby creatures, including you; each
+                      target gains a +1 bonus to AC this battle. <b>XOR</b> One
+                      nearby ally gains a +2 bonus to AC this battle.
+                    </td>
+                  </tr>
+                  <tr class="lvl3" style="text-align: left;">
+                    <td><b>Lvl 3 spell</b></td>
+                    <td>
+                      Each target also gains 1d10 temporary hp per point of the
+                      attack bonus.
+                    </td>
+                    <td>
+                      The target can also roll a save against each save ends
+                      effect.
+                    </td>
+                    <td>The spell now requires only a quick action to cast.</td>
+                    <td>The bonus also applies to PD.</td>
+                  </tr>
+                  <tr class="lvl5" style="text-align: left;">
+                    <td><b>Lvl 5 spell</b></td>
+                    <td>
+                      Each target also gains 2d10 temporary hp instead of 1d10
+                      per point of the attack bonus.
+                    </td>
+                    <td>
+                      This spell is now recharge 16+ after battle instead of
+                      daily.
+                    </td>
+                    <td>
+                      You deal half damage on misses with basic melee attacks
+                      this battle.
+                    </td>
+                    <td>
+                      The bonus increases by +1 while the target is
+                      <a
+                        href="https://www.13thagesrd.com/combat-rules#TOC-Staggered"
+                        >staggered</a
+                      >.
+                    </td>
+                  </tr>
+                  <tr class="lvl7" style="text-align: left;">
+                    <td><b> Lvl 7 spell</b></td>
+                    <td>
+                      All attack bonuses granted by the spell increase by +1.
+                    </td>
+                    <td>
+                      The target can heal using two free recoveries instead of
+                      one.
+                    </td>
+                    <td>
+                      Once during the battle, you can reroll a basic melee
+                      attack.
+                    </td>
+                    <td>The bonus also applies to MD.</td>
+                  </tr>
+                  <tr class="lvl9" style="text-align: left;">
+                    <td><b>Lvl 9 spell</b></td>
+                    <td>
+                      Each target also gains 3d10 temporary hp instead of 2d10
+                      per point of the attack bonus.
+                    </td>
+                    <td>This spell is now recharge 11+ instead.</td>
+                    <td>
+                      For rest of battle, change any of your basic melee attack
+                      damage dice rolls that are less than the
+                      <a
+                        href="https://www.13thagesrd.com/combat-rules#TOC-Escalation-Die"
+                        >escalation die</a
+                      >
+                      to the escalation die value.
+                    </td>
+                    <td>
+                      The bonus when cast for power increases to +4. The bonus
+                      when cast for broad effect increases to +2.
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <h3>
+              <span id="1st_Level_Spells"
+                >1<sup>st</sup> Level Attack Spells</span
               >
-              to the escalation die value.
-            </p>
-            <h4>
-              <span id="Javelin_of_Faith">Javelin of Faith</span>
-            </h4>
-            <p>Ranged spell; At-Will</p>
-            <p><b>Target</b>: One nearby enemy</p>
-            <p><b>Attack</b>: (Wisdom mod + Level) vs. PD</p>
-            <p><b>Hit</b>: (1d6 + Wisdom mod) holy damage.</p>
-            <p><b>Miss</b>: Damage equal to your level.</p>
-            <p class="lvl3" style="margin-left: 20px;">
-              <b>3<sup>rd</sup> level spell</b>: (3d6) damage.
-            </p>
-            <p class="lvl5" style="margin-left: 20px;">
-              <b>5<sup>th</sup> level spell</b>: (6d6) damage.
-            </p>
-            <p class="lvl7" style="margin-left: 20px;">
-              <b>7<sup>th</sup> level spell</b>: (6d10) damage.
-            </p>
-            <p class="lvl9" style="margin-left: 20px;">
-              <b>9<sup>th</sup> level spell</b>: (8d10) damage.
-            </p>
-            <p>
-              <b><i>Adventurer Feat</i></b> The spell also deals +1d6 damage
-              against an undamaged target.
-            </p>
-            <p class="lvl5">
-              <b><i>Champion Feat</i></b> The spell also deals +2d6 damage
-              against an undamaged target. You can now target a far away enemy
-              with the spell at a –2 attack penalty.
-            </p>
-            <p class="lvl8">
-              <b><i>Epic Feat</i></b> The spell also deals +4d6 damage against
-              an undamaged target. If your natural attack roll is an 18+, make
-              the attack a second time against a different target as a free
-              action.
-            </p>
-            <h4>
-              <span id="Shield_of_Faith">Shield of Faith</span>
-            </h4>
-            <p>Ranged spell; Daily</p>
-            <p>Quick action to cast</p>
-            <p>
-              <b>Effect</b>: You can cast this spell for power or for broad
-              effect.
-            </p>
-            <p>
-              <b>Cast for power</b>: One nearby ally gains a +2 bonus to AC this
-              battle.
-            </p>
-            <p>
-              <b>Cast for broad Effect</b>: Choose up to three nearby creatures
-              (including you); each target gains a +1 bonus to AC this battle.
-            </p>
-            <p class="lvl3" style="margin-left: 20px;">
-              <b>3<sup>rd</sup> level spell</b>: The bonus also applies to
-              <a
-                href="https://www.13thagesrd.com/combat-rules#TOC-Physical-Defense-PD-"
-                >PD</a
-              >.
-            </p>
-            <p class="lvl5" style="margin-left: 20px;">
-              <b>5<sup>th</sup> level spell</b>: The bonus increases by +1 while
-              the target is
-              <a href="https://www.13thagesrd.com/combat-rules#TOC-Staggered"
-                >staggered</a
-              >.
-            </p>
-            <p class="lvl7" style="margin-left: 20px;">
-              <b>7<sup>th</sup> level spell</b>: The bonus also applies to
-              <a
-                href="https://www.13thagesrd.com/combat-rules#TOC-Mental-Defense-MD-"
-                >MD</a
-              >.
-            </p>
-            <p class="lvl9" style="margin-left: 20px;">
-              <b>9<sup>th</sup> level spell</b>: The bonus when cast for power
-              increases to +4. The bonus when cast for broad effect increases to
-              +2.
-            </p>
-            <h4>
-              <span id="Spirits_of_the_Righteous"
-                >Spirits of the Righteous</span
-              >
-            </h4>
-            <p>Ranged spell; Once per battle</p>
-            <p><b>Target</b>: One nearby enemy</p>
-            <p><b>Attack</b>: (Wisdom mod + Level) vs. MD</p>
-            <p>
-              <b>Hit</b>: (4d6 + Wisdom mod) holy damage, and your nearby ally
-              with the fewest hp gains a +4 bonus to AC until the end of your
-              next turn.
-            </p>
-            <p>
-              <b>Miss</b>: Your nearby ally with the fewest hp gains a +2 bonus
-              to AC until the end of your next turn.
-            </p>
-            <p class="lvl3" style="margin-left: 20px;">
-              <b>3<sup>rd</sup> level spell</b>: (7d6) damage.
-            </p>
-            <p class="lvl5" style="margin-left: 20px;">
-              <b>5<sup>th</sup> level spell</b>: (7d10) damage.
-            </p>
-            <p class="lvl7" style="margin-left: 20px;">
-              <b>7<sup>th</sup> level spell</b>: (10d12) damage.
-            </p>
-            <p class="lvl9" style="margin-left: 20px;">
-              <b>9<sup>th</sup> level spell</b>: (2d8 x 10) damage.
-            </p>
-            <p class="lvl5">
-              <b><i>Champion Feat</i></b> You also gain the bonus to AC until
-              the end of your next turn on a hit.
-            </p>
-            <h4><span id="Turn_Undead">Turn Undead</span></h4>
-            <p><b>Range</b>: Close-quarters spell</p>
-            <p>Daily</p>
-            <p>
-              <b>Target</b>: 1d4 nearby undead creatures, each with 55 hp or
-              fewer.
-            </p>
-            <p><b>Attack</b>: (Wisdom mod + Charisma mod + Level) vs. MD</p>
-            <p>
-              <b>Hit</b>: The target is
-              <a href="https://www.13thagesrd.com/combat-rules#TOC-Dazed"
-                >dazed</a
-              >
-              until end of your next turn.
-            </p>
-            <p>
-              <b>Hit by 4+</b>: (1d10 x Level) holy damage, and the target is
-              dazed until end of your next turn.
-            </p>
-            <p>
-              <b>Hit by 8+</b>: Against non-mooks, (half target's max hp) holy
-              damage, and the target is dazed (save ends). Against mooks, the +8
-              result now deals (4d10 x Level) holy damage.
-            </p>
-            <p>
-              <b>Hit by 12+ or Natural 20</b>: Against non-mooks, the target is
-              destroyed. Against mooks, the +12 result now deals (4d20 x Level)
-              holy damage
-            </p>
-            <p class="lvl3" style="margin-left: 20px;">
-              <b>3<sup>rd</sup> level spell</b>: Target with 90 hp or fewer.
-            </p>
-            <p class="lvl5" style="margin-left: 20px;">
-              <b>5<sup>th</sup> level spell</b>: Target with 150 hp or fewer.
-            </p>
-            <p class="lvl7" style="margin-left: 20px;">
-              <b>7<sup>th</sup> level spell</b>: Target with 240 hp or fewer.
-            </p>
-            <p class="lvl9" style="margin-left: 20px;">
-              <b>9<sup>th</sup> level spell</b>: Target with 400 hp or fewer.
-            </p>
-            <p>
-              <b><i>Adventurer Feat</i></b> You can expend your daily use of
-              <i>turn undead</i> to gain an additional use of <i>heal</i> in one
-              battle.
-            </p>
-            <p class="lvl5">
-              <b><i>Champion Feat</i></b> You can choose to target either demons
-              or undead with the spell (but not both with the same casting).
-            </p>
-            <p class="lvl8">
-              <b><i>Epic Feat</i></b> Increase the targeting limit by 100 hp.
-            </p>
+            </h3>
+
+            <div style="overflow-x: auto; max-width: 100%; display: block;">
+              <table border="1" cellspacing="0">
+                <thead>
+                  <tr style="text-align: center;">
+                    <th><b>Spell</b></th>
+                    <th><b>Arcane Javalin</b></th>
+                    <th><b>Arcane Spirit</b></th>
+                    <th><b>Turn Undead</b></th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr style="text-align: left;">
+                    <td><b>Timing</b></td>
+                    <td>At-will</td>
+                    <td>Once per battle</td>
+                    <td>Daily</td>
+                  </tr>
+                  <tr style="text-align: left;">
+                    <td><b>Type</b></td>
+                    <td>Ranged</td>
+                    <td>Ranged</td>
+                    <td>Close-quarters</td>
+                  </tr>
+                  <tr style="text-align: left;">
+                    <td><b>Target</b></td>
+                    <td>One nearby enemy</td>
+                    <td>One nearby enemy</td>
+                    <td>
+                      1d4 nearby undead creatures, each with 55 hp or fewer.
+                    </td>
+                  </tr>
+                  <tr style="text-align: left;">
+                    <td><b>Attach</b></td>
+                    <td>(Wisdom mod + Level) vs. PD</td>
+                    <td>(Wisdom mod + Level) vs. MD</td>
+                    <td>(Wisdom mod + Charisma mod + Level) vs. MD</td>
+                  </tr>
+                  <tr style="text-align: left;">
+                    <td><b>Hit</b></td>
+                    <td>(1d6 + Wisdom mod) holy damage.</td>
+                    <td>
+                      (4d6 + Wisdom mod) holy damage, and your nearby ally with
+                      the fewest hp gains a +4 bonus to AC until the end of your
+                      next turn.
+                    </td>
+                    <td>
+                      <b>By 0-3:</b> The target is
+                      <a
+                        href="https://www.13thagesrd.com/combat-rules#TOC-Dazed"
+                        >dazed</a
+                      >
+                      until end of your next turn.<br /><b>By 4-7:</b> (1d10 x
+                      level) holy damage, target is dazed 'til end of your next
+                      turn.<br /><b>By 8-11:</b> Against non-mooks, (half
+                      target's max hp) holy damage, target is dazed (save ends).
+                      Against mooks, (4d10 x Level) holy damage. <br /><b
+                        >By 12+ or Natural 20:</b
+                      >
+                      Against non-mooks, target is destroyed. Against mooks,
+                      (4d20 x Level) holy damage.
+                    </td>
+                  </tr>
+                  <tr style="text-align: left;">
+                    <td><b>Miss</b></td>
+                    <td>Damage equal to your level.</td>
+                    <td>
+                      Your nearby ally with the fewest hp gains a +2 bonus to AC
+                      until the end of your next turn.
+                    </td>
+                    <td>&mdash;</td>
+                  </tr>
+                  <tr class="lvl3" style="text-align: left;">
+                    <td><b>Lvl 3 spell</b></td>
+                    <td>(3d6) damage.</td>
+                    <td>(7d6) damage.</td>
+                    <td>Target with 90 hp or fewer.</td>
+                  </tr>
+                  <tr class="lvl5" style="text-align: left;">
+                    <td><b>Lvl 5 spell</b></td>
+                    <td>(6d6) damage.</td>
+                    <td>(7d10) damage.</td>
+                    <td>Target with 150 hp or fewer.</td>
+                  </tr>
+                  <tr class="lvl7" style="text-align: left;">
+                    <td><b> Lvl 7 spell</b></td>
+                    <td>(6d10) damage.</td>
+                    <td>(10d12) damage.</td>
+                    <td>Target with 240 hp or fewer.</td>
+                  </tr>
+                  <tr class="lvl9" style="text-align: left;">
+                    <td><b>Lvl 9 spell</b></td>
+                    <td>(8d10) damage.</td>
+                    <td>(2d8 x 10) damage.</td>
+                    <td>Target with 400 hp or fewer.</td>
+                  </tr>
+                  <tr style="text-align: left;">
+                    <td><b>Adventure Feat</b></td>
+                    <td>
+                      The spell also deals +1d6 damage against an undamaged
+                      target.
+                    </td>
+                    <td>&mdash;</td>
+                    <td>
+                      You can expend your daily use of <i>turn undead</i> to
+                      gain an additional use of <i>heal</i> in one battle.
+                    </td>
+                  </tr>
+                  <tr class="lvl5" style="text-align: left;">
+                    <td><b>Champion Feat</b></td>
+                    <td>
+                      The spell also deals +2d6 damage against an undamaged
+                      target. You can now target a far away enemy with the spell
+                      at a –2 attack penalty.
+                    </td>
+                    <td>
+                      You also gain the bonus to AC until the end of your next
+                      turn on a hit.
+                    </td>
+                    <td>
+                      You can choose to target either demons or undead with the
+                      spell (but not both with the same casting).
+                    </td>
+                  </tr>
+                  <tr class="lvl8" style="text-align: left;">
+                    <td><b>Epic Feat</b></td>
+                    <td>
+                      The spell also deals +4d6 damage against an undamaged
+                      target. If your natural attack roll is an 18+, make the
+                      attack a second time against a different target as a free
+                      action.
+                    </td>
+                    <td>&mdash;</td>
+                    <td>Increase the targeting limit by 100 hp.</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
             <div class="lvl3">
               <h3>
                 <span id="3rd_Level_Spells">3<sup>rd</sup> Level Spells</span>
@@ -1073,7 +1080,7 @@
                 save even if your attack misses.
               </p>
               <h4>
-                <span id="Divine_Endurance">Divine Endurance</span>
+                <span id="Arcane_Endurance">Arcane Endurance</span>
               </h4>
               <p>Ranged spell; Daily</p>
               <p>Quick action to cast</p>
@@ -1164,7 +1171,7 @@
                 spell.
               </p>
               <h4>
-                <span id="Strength_of_the_Gods">Strength of the Gods</span>
+                <span id="Arcane_Strength">Arcane Strength</span>
               </h4>
               <p>Ranged spell; Daily</p>
               <p>Quick action to cast</p>
@@ -1196,7 +1203,7 @@
                 <span id="5th_Level_Spells">5<sup>th</sup> Level Spells</span>
               </h3>
               <h4>
-                <span id="Crisis_of_Faith">Crisis of Faith</span>
+                <span id="Shake_Confidence">Shake Confidence</span>
               </h4>
               <p><b>Range</b>: Close-quarters spell</p>
               <p>Daily</p>
@@ -1218,7 +1225,7 @@
               <p class="lvl9" style="margin-left: 20px;">
                 <b>9<sup>th</sup> level spell</b>: 250 hp or fewer.
               </p>
-              <h4><span id="Sanctuary">Sanctuary</span></h4>
+              <h4><span id="Arcane_Shelter">Arcane Shelter</span></h4>
               <p><b>Range</b>: Close-quarters spell</p>
               <p>Daily</p>
               <p>
@@ -1383,7 +1390,7 @@
                 be in the underworld.
               </p>
               <h4>
-                <span id="Prayer_for_Readiness">Prayer for Readiness</span>
+                <span id="Arcane_Readiness">Arcane Readiness</span>
               </h4>
               <p><b>Range</b>: Close-quarters spell</p>
               <p>Daily</p>
