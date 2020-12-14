@@ -1,107 +1,141 @@
 <!DOCTYPE html>
 <html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <meta charset="utf-8" />
+    <meta editor="Danny Rorabaugh" />
+    <meta updated="2017-01-09" />
+    <title>256</title>
 
-<head>
-  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
-  <meta charset="utf-8">
-  <meta editor="Danny Rorabaugh">
-  <meta updated="2017-01-09">
-  <title>256</title>
+    <link href="main.css" rel="stylesheet" type="text/css" />
+    <link rel="shortcut icon" href="board.png" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
 
-  <link href="main.css" rel="stylesheet" type="text/css">
-  <link rel="shortcut icon" href="board.png">
-  <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="HandheldFriendly" content="True" />
+    <meta name="MobileOptimized" content="320" />
+    <meta
+      name="viewport"
+      content="width=device-width, target-densitydpi=160dpi, initial-scale=1.0, maximum-scale=1, user-scalable=no, minimal-ui"
+    />
 
-  <meta name="HandheldFriendly" content="True">
-  <meta name="MobileOptimized" content="320">
-  <meta name="viewport" content="width=device-width, target-densitydpi=160dpi, initial-scale=1.0, maximum-scale=1, user-scalable=no, minimal-ui">
+    <meta property="og:title" content="256 game" />
+    <meta property="og:site_name" content="256 game" />
+    <meta
+      property="og:description"
+      content="Join the numbers and get to the 256 tile! Careful: this game is extremely addictive!"
+    />
+    <meta property="og:image" content="board.png" />
+  </head>
 
-  <meta property="og:title" content="256 game">
-  <meta property="og:site_name" content="256 game">
-  <meta property="og:description" content="Join the numbers and get to the 256 tile! Careful: this game is extremely addictive!">
-  <meta property="og:image" content="board.png">
-</head>
-
-<body>
-
-  <div class="container">
-    <div class="heading">
-      <h1 class="title">256</h1>
-      <div class="scores-container">
-        <div class="score-container">0</div>
-        <div class="best-container">0</div>
+  <body>
+    <div class="container">
+      <div class="heading">
+        <h1 class="title">256</h1>
+        <div class="scores-container">
+          <div class="score-container">0</div>
+          <div class="best-container">0</div>
+        </div>
       </div>
+      <p class="game-intro">
+        Join the numbers and get to the <strong>256 tile!</strong>
+      </p>
+
+      <div class="game-container">
+        <div class="game-message">
+          <p></p>
+          <div class="lower">
+            <a class="keep-playing-button">Keep going</a>
+            <a class="retry-button">Try again</a>
+          </div>
+        </div>
+
+        <div class="grid-container">
+          <div class="grid-row">
+            <div class="grid-cell"></div>
+            <div class="grid-cell"></div>
+            <div class="grid-cell"></div>
+            <div class="grid-cell"></div>
+          </div>
+          <div class="grid-row">
+            <div class="grid-cell"></div>
+            <div class="grid-cell"></div>
+            <div class="grid-cell"></div>
+            <div class="grid-cell"></div>
+          </div>
+          <div class="grid-row">
+            <div class="grid-cell"></div>
+            <div class="grid-cell"></div>
+            <div class="grid-cell"></div>
+            <div class="grid-cell"></div>
+          </div>
+        </div>
+
+        <div class="tile-container">
+          <div class="tile tile-2 tile-position-3-1 tile-new">
+            <div class="tile-inner">2</div>
+          </div>
+          <div class="tile tile-2 tile-position-1-2 tile-new">
+            <div class="tile-inner">1</div>
+          </div>
+        </div>
+      </div>
+
+      <p class="game-explanation">
+        <strong class="important">How to play:</strong> Use your
+        <strong>arrow keys</strong> to move the tiles. When two tiles with the
+        same number bump, <strong>they sum!</strong>
+      </p>
+      <hr />
+      <p>
+        Copied from
+        <a
+          href="http://gabrielecirulli.github.io/2048/"
+          target="_blank"
+          rel="noopener noreferrer"
+          >2048</a
+        >
+        by
+        <a
+          href="http://gabrielecirulli.com/"
+          target="_blank"
+          rel="noopener noreferrer"
+          >Gabriele Cirulli</a
+        >.
+        <br />
+        Based on
+        <a
+          href="https://play.google.com/store/apps/details?id=com.veewo.a1024"
+          target="_blank"
+          rel="noopener noreferrer"
+          >1024</a
+        >
+        by Veewo Games.
+        <br />
+        Conceptually similar to
+        <a
+          href="http://asherv.com/threes/"
+          target="_blank"
+          rel="noopener noreferrer"
+          >Threes</a
+        >
+        by
+        <a href="http://asherv.com/" target="_blank" rel="noopener noreferrer"
+          >Asher Vollmer</a
+        >.
+        <br />
+        My 5x4 variant <a href="../512/512.html">512</a> has an obstruction.
+      </p>
+      <hr />
+      <p>Return to <a href="../../coding.html">Danny's Coding Page</a>.</p>
     </div>
-    <p class="game-intro">Join the numbers and get to the <strong>256 tile!</strong></p>
 
-    <div class="game-container">
-      <div class="game-message">
-        <p></p>
-        <div class="lower">
-          <a class="keep-playing-button">Keep going</a>
-          <a class="retry-button">Try again</a>
-        </div>
-      </div>
-
-      <div class="grid-container">
-        <div class="grid-row">
-          <div class="grid-cell"></div>
-          <div class="grid-cell"></div>
-          <div class="grid-cell"></div>
-          <div class="grid-cell"></div>
-        </div>
-        <div class="grid-row">
-          <div class="grid-cell"></div>
-          <div class="grid-cell"></div>
-          <div class="grid-cell"></div>
-          <div class="grid-cell"></div>
-        </div>
-        <div class="grid-row">
-          <div class="grid-cell"></div>
-          <div class="grid-cell"></div>
-          <div class="grid-cell"></div>
-          <div class="grid-cell"></div>
-        </div>
-      </div>
-
-      <div class="tile-container">
-        <div class="tile tile-2 tile-position-3-1 tile-new">
-          <div class="tile-inner">2</div>
-        </div>
-        <div class="tile tile-2 tile-position-1-2 tile-new">
-          <div class="tile-inner">1</div>
-        </div>
-      </div>
-    </div>
-
-    <p class="game-explanation">
-      <strong class="important">How to play:</strong> Use your <strong>arrow keys</strong> to move the tiles. When two tiles with the same number bump, <strong>they sum!</strong>
-    </p>
-    <hr>
-    <p>
-      Copied from <a href="http://gabrielecirulli.github.io/2048/" target="_blank">2048</a> by <a href="http://gabrielecirulli.com/" target="_blank">Gabriele Cirulli</a>.
-      <br>
-      Based on <a href="https://play.google.com/store/apps/details?id=com.veewo.a1024" target="_blank">1024</a> by Veewo Games.
-      <br>
-      Conceptually similar to <a href="http://asherv.com/threes/" target="_blank">Threes</a> by <a href="http://asherv.com/" target="_blank">Asher Vollmer</a>.
-      <br>
-      My 5x4 variant <a href="../512/512.html">512</a> has an obstruction.
-    </p>
-    <hr>
-    <p>
-      Return to <a href="../../coding.html">Danny's Coding Page</a>.
-    </p>
-  </div>
-
-  <script src="animframe_polyfill.js"></script>
-  <script src="keyboard_input_manager.js"></script>
-  <script src="html_actuator.js"></script>
-  <script src="grid.js"></script>
-  <script src="tile.js"></script>
-  <script src="local_score_manager.js"></script>
-  <script src="game_manager.js"></script>
-  <script src="application.js"></script>
-
-</body>
-
+    <script src="animframe_polyfill.js"></script>
+    <script src="keyboard_input_manager.js"></script>
+    <script src="html_actuator.js"></script>
+    <script src="grid.js"></script>
+    <script src="tile.js"></script>
+    <script src="local_score_manager.js"></script>
+    <script src="game_manager.js"></script>
+    <script src="application.js"></script>
+  </body>
 </html>

@@ -1,149 +1,466 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 TRANSITIONAL//EN">
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 TRANSITIONAL//EN">
 
 <html>
+  <head>
+    <title>DR's Coding</title>
 
-	<head>
-		<title>DR's Coding</title>
-        
-        <!-- Updated 2020-05-20 -->
+    <!-- Updated 2020-12-14 -->
 
-        <meta http-equiv="content-type" content="text/html; charset=UTF-8">
-		
-		<link rel="stylesheet" type="text/css" href="rorabaugh.css">
-		
-		<style type="text/css">
-			h4{font-weight:bold;margin-bottom:3px;margin-top:3px}
-			.introP{margin-left:10px;font-style:italic;}
-		</style>
-		
-		<script type="text/javascript">
-			function mScores() {
-window.open("coding/manufactoria.html", "_blank", "scrollbars=yes,width=250,height=1000");
-			}
-			function cScores() {
-window.open("coding/codex.html", "_blank", "scrollbars=yes,width=400,height=850");
-			}
-			function sScores() {
-window.open("coding/spacechem.html", "_blank", "scrollbars=yes,width=400,height=850");
-			}
-		</script>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
 
-	</head>
+    <link rel="stylesheet" type="text/css" href="rorabaugh.css" />
 
-	<body lang="EN-US">
-		<div id="menu">
-			<ul>
-				<li><a href="index.html">Home</a></li>
-				<li><a href="research.html">Research</a></li>
-				<li><a href="problems.html">Open Problems</a></li>
-				<li><a href="teaching.html">Teaching</a></li>
-				<li><strong>Coding</strong></li>
-				<li><a href="spanish.html">Espa&ntilde;ol</a></li>
-			</ul>
-		</div>
-		
-		<!--Coding-->
-		<div style="margin-top:60px;">
-			<p>I am currently training myself in C# (.NET) and JavaScript (React).</p>
-			<p>In my most recent postdoc position, I worked with various languages and environments, gaining proficiency with Bash, Git, Python, R, and Vim, and familiarity with Apache Spark, C, MPI, and OpenMP.</p>
-			<p>Previously as a math postdoc, I would regularly use Sage and <span class="latex">L<sup>A</sup>T<sub>E</sub>X</span> for mathematical experimentation and dissemination.</p>
-			<p>Off and on, I dabble in CSS and Javascript. In particular, check out my web-programming projects below.</p>
-<!--			<p>As a graudate student, I also used Git, Java, Maple, Vim, Visual Basic.</p>
+    <style type="text/css">
+      h4 {
+        font-weight: bold;
+        margin-bottom: 3px;
+        margin-top: 3px;
+      }
+      .introP {
+        margin-left: 10px;
+        font-style: italic;
+      }
+    </style>
+
+    <script type="text/javascript">
+      function mScores() {
+        var newWindow = window.open(
+          "coding/manufactoria.html",
+          "_blank",
+          "scrollbars=yes,width=250,height=1000"
+        );
+        newWindow.opener = null;
+      }
+      function cScores() {
+        var newWindow = window.open(
+          "coding/codex.html",
+          "_blank",
+          "scrollbars=yes,width=400,height=850"
+        );
+        newWindow.opener = null;
+      }
+      function sScores() {
+        var newWindow = window.open(
+          "coding/spacechem.html",
+          "_blank",
+          "scrollbars=yes,width=400,height=850"
+        );
+        newWindow.opener = null;
+      }
+    </script>
+  </head>
+
+  <body lang="EN-US">
+    <div id="menu">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="research.html">Research</a></li>
+        <li><a href="problems.html">Open Problems</a></li>
+        <li><a href="teaching.html">Teaching</a></li>
+        <li><strong>Coding</strong></li>
+        <li><a href="spanish.html">Espa&ntilde;ol</a></li>
+      </ul>
+    </div>
+
+    <!--Coding-->
+    <div style="margin-top: 60px">
+      <p>
+        I am currently working with C# (.NET) and TypeScript (React) as a
+        volunteer software developer for SIL International.
+      </p>
+      <p>
+        In my most recent postdoc position, I worked with various languages and
+        environments, gaining proficiency with Bash, Git, Python, R, and Vim,
+        and familiarity with Apache Spark, C, MPI, and OpenMP.
+      </p>
+      <p>
+        Previously as a math postdoc, I would regularly use Sage and
+        <span class="latex">L<sup>A</sup>T<sub>E</sub>X</span> for mathematical
+        experimentation and dissemination.
+      </p>
+      <p>
+        Off and on, I dabble in CSS and Javascript. In particular, check out my
+        web-programming projects below.
+      </p>
+      <!--			<p>As a graudate student, I also used Git, Java, Maple, Vim, Visual Basic.</p>
 			<p>As an undergrad, I learned some C++, HTML, Maple, MATLAB, Minitab.</p>
--->			
-			<hr>
-			<h3>Web Programming</h3>
-			
-			<h4>Graph Property Database</h4>
-			<p style="margin-top:0;">Just a prototype; I hope to develop something like this into a slick educational tool:</p>
-			<ul>
-				<li> The <a href="GPD/ib.html">GPD Implication Browser</a>.
-			</ul>
-			
-			<h4>Quiz Games</h4>
-			<p style="margin-top:0;">This is a fun, visual ways to test one's familiarity with a given topic:</p>
-			<ul>
-				<li> The <a href="coding/quiz/hex-color.html">Hex Color Name Game</a>.
-			</ul>
-			
-			<p class="introP">My early experience with CSS and JavaScript began with manipulating other people's open-source code to make a custom version of their creation. For example...</p>
-			
-			<h4>2048</h4>
-			<p style="margin-top:0;">I've made two variants of Gabriele Cirulli's 4x4 tile game <a href="https://gabrielecirulli.github.io/2048/" target="_blank">2048</a>:</p>
-			<ul>
-				<li> <a href="coding/256/256.html">256</a> is a 3x4 version allowing for shorter play-time.
-				<li> <a href="coding/512/512.html">512</a> is a 4x5 version with an obstruction in a center tile, which encourages a more mindful play-style.
-			</ul>
-			
-			<h4>Tree of Life</h4>
-			<p style="margin-top:0;">I've modified a branch of the <a href="http://www.onezoom.org/life.html" target="_blank">OneZoom Tree of Life</a>:</p>
-			<ul>
-				<li> The <a href="coding/life-mammal.html">Tree of Mammalian Life</a> removes the clutter of distinct leaves for different species that share a common name, yet is more comprehensive with respect to basic names used in common speech.
-			</ul>
-			
-			<hr>
-			<h3>Sharing the Joys of Code</h3>
-			
-			<p>The following are some fun ways to learn algorithm development or practice coding.
-			More can be found at the <a href="http://programminggames.org/" target="_blank">Programming Games Wiki</a>.</p>
-			
-			<h4>Online Games, Puzzles, and Challenges</h4>
-			<ul>
-				<li><a href="http://blockly.games" target="_blank">Blockly Games</a> [Blockly/JavaScript intro with simple puzzles and games]
-				<li><a href="http://codecombat.com/" target="_blank">Code Combat</a> [community-developed game for JavaScript, Python, HTML/CSS, jQuery: beginners learn by playing, experts practice by contributing]
-				<li><a href="http://www.coderbyte.com/challenges" target="_blank">Coderbyte</a> [7+ free challenges in 14 programming languages]
- 				<li><a href="http://www.zachtronics.com/the-codex-of-alchemical-engineering/" target="_blank">The Codex of Alchemical Engineering</a> [algorithmic game] <button onclick="cScores()">My Scores</button>
-				<li><a href="http://www.codingame.com" target="_blank">CodinGame</a> [coding challenges in 25+ languages]
-				<li><a href="http://pleasingfungus.com/Manufactoria/" target="_blank">Manufactoria</a> [algorithmic game] <button onclick="mScores()">My Scores</button>
-				<li><a href="http://projecteuler.net/" target="_blank">Project Euler</a> [mathematical coding challenges]
-			</ul>
-			
-			<h4>Online Tutorials</h4>
-			<ul>
-				<li><a href="https://arcade.makecode.com/" target="_blank">Arcade</a> [tutorials and demos for game creation with MS MakeCode]
-				<li><a href="http://developers.google.com/blockly/about/showcase" target="_blank">Blockly</a> [visual programming environments: from educational games to app development tools]
-				<li><a href="http://www.codecademy.com/#courses" target="_blank">Codecademy</a> [courses in 14 programming languages]
-				<li><a href="http://www.coderbyte.com/#courses" target="_blank">Coderbyte</a> [courses in JavaScript, Python, Ruby]
- 				<li><a href="http://csfirst.withgoogle.com" target="_blank">CS First</a> [kid-oriented block-based coding tutorials and activities]
-				<li><a href="http://gameblox.org" target="_blank">Gameblox</a> [game maker with block-based coding]
-				<li><a href="http://techdevguide.withgoogle.com/" target="_blank">Google Tech Dev Guide</a> [tutorials and problems]
-				<li><a href="https://appinventor.mit.edu/" target="_blank">MIT App Inventor</a> [app building guides]
-			</ul>
-			
-			<h4>Downloadable</h4>
-			<ul>				
-				<li><a href="http://www.alice.org/" target="_blank">Alice</a> [visual programming environment to introduce object-oriented code]
-				<li><a href="http://www.gethopscotch.com/" target="_blank">Hopscotch</a> [visual app programming environment for iPad and iPhone]
-				<li><a href="http://www.zachtronics.com/spacechem/" target="_blank">SpaceChem</a> [algorithmic game] <button onclick="sScores()">My Scores</button>
-				<li><a href="http://www.zachtronics.com/tis-100/" target="_blank">TIS-100</a> [assembly game]
-			</ul>
-			
-			<h4>Card and Board Games</h4>
-			<ul>
-				<li><a href="https://www.kickstarter.com/projects/rajsidhu/code-monkey-island-making-programming-childs-play" target="_blank">Code Monkey Island</a> 
-				<li><a href="https://potatopirates.game/" target="_blank">Potato Pirates</a> 
-			</ul>
-			
-			<h4>Programmable Robots</h4>
-			<ul>
-				<li><a href="https://microbit.org/" target="_blank">BBC Micro:bit</a>
-				<li><a href="https://chibitronics.com/" target="_blank">Chibitronics</a>
-				<li><a href="https://www.codebug.org.uk/" target="_blank">CodeBug</a>
-				<li><a href="https://www.digitaldreamlabs.com/pages/cozmo" target="_blank">Cozmo</a>
-				<li><a href="http://www.primotoys.com/" target="_blank">Cubetto</a>
-				<li><a href="http://www.makewonder.com/robots/" target="_blank">Cue; Dash; Dot</a>
-				<li><a href="https://www.lego.com/en-us/themes/mindstorms/buildarobot" target="_blank">LEGO Mindstorms</a>
-				<li><a href="https://ozobot.com/" target="_blank">Ozobot</a>
-				<li><a href="https://parallax.com/" target="_blank">Parallax</a>
-				<li><a href="https://thymio.org/" target="_blank">Thymio</a>
-			</ul>
-			
-		</div>
-		
-		<br>
-		
-		<!-- Might add https://sagecell.sagemath.org/static/about.html -->
-			
-	</body>
-	
+-->
+      <hr />
+      <h3>Web Programming</h3>
+
+      <h4>Graph Property Database</h4>
+      <p style="margin-top: 0">
+        Just a prototype; I hope to develop something like this into a slick
+        educational tool:
+      </p>
+      <ul>
+        <li>The <a href="GPD/ib.html">GPD Implication Browser</a>.</li>
+      </ul>
+
+      <h4>Quiz Games</h4>
+      <p style="margin-top: 0">
+        This is a fun, visual ways to test one's familiarity with a given topic:
+      </p>
+      <ul>
+        <li>
+          The <a href="coding/quiz/hex-color.html">Hex Color Name Game</a>.
+        </li>
+      </ul>
+
+      <p class="introP">
+        My early experience with CSS and JavaScript began with manipulating
+        other people's open-source code to make a custom version of their
+        creation. For example...
+      </p>
+
+      <h4>2048</h4>
+      <p style="margin-top: 0">
+        I've made two variants of Gabriele Cirulli's 4x4 tile game
+        <a
+          href="https://gabrielecirulli.github.io/2048/"
+          target="_blank"
+          rel="noopener noreferrer"
+          >2048</a
+        >:
+      </p>
+      <ul>
+        <li>
+          <a href="coding/256/256.html">256</a> is a 3x4 version allowing for
+          shorter play-time.
+        </li>
+        <li>
+          <a href="coding/512/512.html">512</a> is a 4x5 version with an
+          obstruction in a center tile, which encourages a more mindful
+          play-style.
+        </li>
+      </ul>
+
+      <h4>Tree of Life</h4>
+      <p style="margin-top: 0">
+        I've modified a branch of the
+        <a
+          href="http://www.onezoom.org/life.html"
+          target="_blank"
+          rel="noopener noreferrer"
+          >OneZoom Tree of Life</a
+        >:
+      </p>
+      <ul>
+        <li>
+          The
+          <a href="coding/life-mammal.html">Tree of Mammalian Life</a> removes
+          the clutter of distinct leaves for different species that share a
+          common name, yet is more comprehensive with respect to basic names
+          used in common speech.
+        </li>
+      </ul>
+
+      <hr />
+      <h3>Sharing the Joys of Code</h3>
+
+      <p>
+        The following are some fun ways to learn algorithm development or
+        practice coding. More can be found at the
+        <a
+          href="http://programminggames.org/"
+          target="_blank"
+          rel="noopener noreferrer"
+          >Programming Games Wiki</a
+        >.
+      </p>
+
+      <h4>Online Games, Puzzles, and Challenges</h4>
+      <ul>
+        <li>
+          <a
+            href="http://blockly.games"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Blockly Games</a
+          >
+          [Blockly/JavaScript intro with simple puzzles and games]
+        </li>
+        <li>
+          <a
+            href="http://codecombat.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Code Combat</a
+          >
+          [community-developed game for JavaScript, Python, HTML/CSS, jQuery:
+          beginners learn by playing, experts practice by contributing]
+        </li>
+        <li>
+          <a
+            href="http://www.coderbyte.com/challenges"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Coderbyte</a
+          >
+          [7+ free challenges in 14 programming languages]
+        </li>
+        <li>
+          <a
+            href="http://www.zachtronics.com/the-codex-of-alchemical-engineering/"
+            target="_blank"
+            rel="noopener noreferrer"
+            >The Codex of Alchemical Engineering</a
+          >
+          [algorithmic game] <button onclick="cScores()">My Scores</button>
+        </li>
+        <li>
+          <a
+            href="http://www.codingame.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            >CodinGame</a
+          >
+          [coding challenges in 25+ languages]
+        </li>
+        <li>
+          <a
+            href="http://pleasingfungus.com/Manufactoria/"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Manufactoria</a
+          >
+          [algorithmic game] <button onclick="mScores()">My Scores</button>
+        </li>
+        <li>
+          <a
+            href="http://projecteuler.net/"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Project Euler</a
+          >
+          [mathematical coding challenges]
+        </li>
+      </ul>
+
+      <h4>Online Tutorials</h4>
+      <ul>
+        <li>
+          <a
+            href="https://arcade.makecode.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Arcade</a
+          >
+          [tutorials and demos for game creation with MS MakeCode]
+        </li>
+        <li>
+          <a
+            href="http://developers.google.com/blockly/about/showcase"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Blockly</a
+          >
+          [visual programming environments: from educational games to app
+          development tools]
+        </li>
+        <li>
+          <a
+            href="http://www.codecademy.com/#courses"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Codecademy</a
+          >
+          [courses in 14 programming languages]
+        </li>
+        <li>
+          <a
+            href="http://www.coderbyte.com/#courses"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Coderbyte</a
+          >
+          [courses in JavaScript, Python, Ruby]
+        </li>
+        <li>
+          <a
+            href="http://csfirst.withgoogle.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            >CS First</a
+          >
+          [kid-oriented block-based coding tutorials and activities]
+        </li>
+        <li>
+          <a
+            href="http://gameblox.org"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Gameblox</a
+          >
+          [game maker with block-based coding]
+        </li>
+        <li>
+          <a
+            href="http://techdevguide.withgoogle.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Google Tech Dev Guide</a
+          >
+          [tutorials and problems]
+        </li>
+        <li>
+          <a
+            href="https://appinventor.mit.edu/"
+            target="_blank"
+            rel="noopener noreferrer"
+            >MIT App Inventor</a
+          >
+          [app building guides]
+        </li>
+      </ul>
+
+      <h4>Downloadable</h4>
+      <ul>
+        <li>
+          <a
+            href="http://www.alice.org/"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Alice</a
+          >
+          [visual programming environment to introduce object-oriented code]
+        </li>
+        <li>
+          <a
+            href="http://www.gethopscotch.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Hopscotch</a
+          >
+          [visual app programming environment for iPad and iPhone]
+        </li>
+        <li>
+          <a
+            href="http://www.zachtronics.com/spacechem/"
+            target="_blank"
+            rel="noopener noreferrer"
+            >SpaceChem</a
+          >
+          [algorithmic game] <button onclick="sScores()">My Scores</button>
+        </li>
+        <li>
+          <a
+            href="http://www.zachtronics.com/tis-100/"
+            target="_blank"
+            rel="noopener noreferrer"
+            >TIS-100</a
+          >
+          [assembly game]
+        </li>
+      </ul>
+
+      <h4>Card and Board Games</h4>
+      <ul>
+        <li>
+          <a
+            href="https://www.kickstarter.com/projects/rajsidhu/code-monkey-island-making-programming-childs-play"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Code Monkey Island</a
+          >
+        </li>
+        <li>
+          <a
+            href="https://potatopirates.game/"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Potato Pirates</a
+          >
+        </li>
+      </ul>
+
+      <h4>Programmable Robots</h4>
+      <ul>
+        <li>
+          <a
+            href="https://microbit.org/"
+            target="_blank"
+            rel="noopener noreferrer"
+            >BBC Micro:bit</a
+          >
+        </li>
+        <li>
+          <a
+            href="https://chibitronics.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Chibitronics</a
+          >
+        </li>
+        <li>
+          <a
+            href="https://www.codebug.org.uk/"
+            target="_blank"
+            rel="noopener noreferrer"
+            >CodeBug</a
+          >
+        </li>
+        <li>
+          <a
+            href="https://www.digitaldreamlabs.com/pages/cozmo"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Cozmo</a
+          >
+        </li>
+        <li>
+          <a
+            href="http://www.primotoys.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Cubetto</a
+          >
+        </li>
+        <li>
+          <a
+            href="http://www.makewonder.com/robots/"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Cue; Dash; Dot</a
+          >
+        </li>
+        <li>
+          <a
+            href="https://www.lego.com/en-us/themes/mindstorms/buildarobot"
+            target="_blank"
+            rel="noopener noreferrer"
+            >LEGO Mindstorms</a
+          >
+        </li>
+        <li>
+          <a
+            href="https://ozobot.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Ozobot</a
+          >
+        </li>
+        <li>
+          <a
+            href="https://parallax.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Parallax</a
+          >
+        </li>
+        <li>
+          <a
+            href="https://thymio.org/"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Thymio</a
+          >
+        </li>
+      </ul>
+    </div>
+
+    <br />
+
+    <!-- Might add https://sagecell.sagemath.org/static/about.html -->
+  </body>
 </html>
