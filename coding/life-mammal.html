@@ -1,109 +1,190 @@
 <!DOCTYPE html>
 <html>
-
-<head>
-    <meta name="description" content="OneZoom Explorer: Tree of Mammalian Life">
-    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
-    <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <head>
+    <meta
+      name="description"
+      content="OneZoom Explorer: Tree of Mammalian Life"
+    />
+    <meta
+      name="viewport"
+      content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width"
+    />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <!-- the image-rendering options are supposed to improve speed -->
 
-	<meta editor="Danny Rorabaugh">
-	<meta updated="2016-06-27">
-    <link href="life_files/lifeStyles.css" rel="stylesheet">
+    <meta editor="Danny Rorabaugh" />
+    <meta updated="2016-06-27" />
+    <link href="life_files/lifeStyles.css" rel="stylesheet" />
 
-    <title> OneZoom Explorer: Tree of Mammalian Life</title>
-        
+    <title>OneZoom Explorer: Tree of Mammalian Life</title>
+
     <script type="text/javascript">
-        var data_path_pics_main = "http://www.onezoom.org/OneZoom/static/FinalOutputs/pics"+"/";
-        var data_path_thumbs_main = "http://www.onezoom.org/OneZoom/static/FinalOutputs/pics"+"/";
-        var load_scripts = [
-            {'id':'_Options',  'path':"life_files/Options.js"},
-            {'id':'_tree',    'path':"life_files/mammal.js"},
-            {'id':'_Drawing', 'path':"life_files/Drawing.js"},
-            {'id':'_JScode',  'path':"life_files/Core_engine.js"},
-            {'id':'_UI',  'path':"life_files/User_interface.js"},
-        ];
+      var data_path_pics_main =
+        "http://www.onezoom.org/OneZoom/static/FinalOutputs/pics" + "/";
+      var data_path_thumbs_main =
+        "http://www.onezoom.org/OneZoom/static/FinalOutputs/pics" + "/";
+      var load_scripts = [
+        { id: "_Options", path: "life_files/Options.js" },
+        { id: "_tree", path: "life_files/mammal.js" },
+        { id: "_Drawing", path: "life_files/Drawing.js" },
+        { id: "_JScode", path: "life_files/Core_engine.js" },
+        { id: "_UI", path: "life_files/User_interface.js" },
+      ];
     </script>
-		
-	<script type="text/javascript" src="life_files/Life_options.js" id="Life_options"></script>
-		
-	<script>
-		toggle_signposts = function(link_target) {
-			if (link_target.innerHTML == "Turn on signposts") {
-				drawsignposts = true;
-				link_target.innerHTML = "Turn off signposts";
-			} else {
-				drawsignposts = false;
-				link_target.innerHTML = "Turn on signposts";
-			}
-		}
-	</script>
-		
-		<script src="life_files/Options.js" id="_Options"></script>
-		<script src="life_files/test-mammal.js" id="_tree"></script>
-		<script src="life_files/Drawing.js" id="_Drawing"></script>
-		<script src="life_files/Core_engine.js" id="_JScode"></script>
-		<script src="life_files/User_interface.js" id="_UI"></script>
-</head>
 
-<body id="wholebody" onload="init_first(load_scripts, 'init_after_load()');" onresize="special_resize()" style="overflow: hidden ; user-select:none -webkit-touch-callout: none; -webkit-user-select: none; -khtml-user-select: none; -moz-user-select:none; -ms-user-select:none;" unselectable="on">
-    
+    <script
+      type="text/javascript"
+      src="life_files/Life_options.js"
+      id="Life_options"
+    ></script>
+
+    <script>
+      toggle_signposts = function (link_target) {
+        if (link_target.innerHTML == "Turn on signposts") {
+          drawsignposts = true;
+          link_target.innerHTML = "Turn off signposts";
+        } else {
+          drawsignposts = false;
+          link_target.innerHTML = "Turn on signposts";
+        }
+      };
+    </script>
+
+    <script src="life_files/Options.js" id="_Options"></script>
+    <script src="life_files/test-mammal.js" id="_tree"></script>
+    <script src="life_files/Drawing.js" id="_Drawing"></script>
+    <script src="life_files/Core_engine.js" id="_JScode"></script>
+    <script src="life_files/User_interface.js" id="_UI"></script>
+  </head>
+
+  <body
+    id="wholebody"
+    onload="init_first(load_scripts, 'init_after_load()');"
+    onresize="special_resize()"
+    style="overflow: hidden ; user-select:none -webkit-touch-callout: none; -webkit-user-select: none; -khtml-user-select: none; -moz-user-select:none; -ms-user-select:none;"
+    unselectable="on"
+  >
     <!-- main body of document -->
-    <canvas height="995" width="1821" id="myCanvas">
-    </canvas>
-    
+    <canvas height="995" width="1821" id="myCanvas"> </canvas>
+
     <ol id="controlButtons">
-        <li class="dropdown" id="menuButton"><button onmouseover="overMenu()" onmouseout="soonNotOverMenu()"><img src="life_files/png/menu.png" /></button></li>
-        <li class="nonzoomcb" id="searchButton"><button onmouseover="overSearch()" onmouseout="soonNotOverSearch()"><img src="life_files/png/search.png" /></button></li>
-        <li class="nonzoomcb" id="locateButton"><button onmouseover="overLocation()" onmouseout="soonNotOverLocation()"><img src="life_files/png/locate.png" /></button></li>
-        <li class="nonzoomcb" id="upButton"><button onclick="Bzoomup()" onmouseover="overUp()" onmouseout="notOver()"><img src="life_files/png/up.png" /></button></li>
-        <li class="zoomcb" id="plusButton"><button onclick="BZoomin()" onmouseover="overIn()" onmouseout="notOver()"><img src="life_files/png/plus.png" /></button></li>
-        <li class="zoomcb" id="minusButton"><button onclick="CZoomout()" onmouseover="overOut()" onmouseout="notOver()"><img src="life_files/png/minus.png" /></button></li>
+      <li class="dropdown" id="menuButton">
+        <button onmouseover="overMenu()" onmouseout="soonNotOverMenu()">
+          <img src="life_files/png/menu.png" />
+        </button>
+      </li>
+      <li class="nonzoomcb" id="searchButton">
+        <button onmouseover="overSearch()" onmouseout="soonNotOverSearch()">
+          <img src="life_files/png/search.png" />
+        </button>
+      </li>
+      <li class="nonzoomcb" id="locateButton">
+        <button onmouseover="overLocation()" onmouseout="soonNotOverLocation()">
+          <img src="life_files/png/locate.png" />
+        </button>
+      </li>
+      <li class="nonzoomcb" id="upButton">
+        <button
+          onclick="Bzoomup()"
+          onmouseover="overUp()"
+          onmouseout="notOver()"
+        >
+          <img src="life_files/png/up.png" />
+        </button>
+      </li>
+      <li class="zoomcb" id="plusButton">
+        <button
+          onclick="BZoomin()"
+          onmouseover="overIn()"
+          onmouseout="notOver()"
+        >
+          <img src="life_files/png/plus.png" />
+        </button>
+      </li>
+      <li class="zoomcb" id="minusButton">
+        <button
+          onclick="CZoomout()"
+          onmouseover="overOut()"
+          onmouseout="notOver()"
+        >
+          <img src="life_files/png/minus.png" />
+        </button>
+      </li>
     </ol>
-    
+
     <div id="outerHint"></div>
-    
+
     <div id="hintBox"></div>
 
-    <div id="searchBox" onmouseout="soonNotOverSearch()" onmouseover="overSearch()" onscroll="searchScroll()">
-        <ol class="sbuttons">
-            <li id="search_header">Search the tree</li>
-        </ol>
-        <input id="search_input" name="search_input_text" autocomplete="off" onchange="UI_search_enter()" onkeyup="UI_search()" onpaste="UI_search()" type="text">
-        <ol class="sbuttons" id="searchButtons">
-            <!-- Search results will be inserted here by js when text is entered in search box -->
-        </ol>
-    	<ol id="popularSpecies">
-			<!-- Suggested branches will be inserted here from Life_options.js on initial page load -->
-        </ol>
+    <div
+      id="searchBox"
+      onmouseout="soonNotOverSearch()"
+      onmouseover="overSearch()"
+      onscroll="searchScroll()"
+    >
+      <ol class="sbuttons">
+        <li id="search_header">Search the tree</li>
+      </ol>
+      <input
+        id="search_input"
+        name="search_input_text"
+        autocomplete="off"
+        onchange="UI_search_enter()"
+        onkeyup="UI_search()"
+        onpaste="UI_search()"
+        type="text"
+      />
+      <ol class="sbuttons" id="searchButtons">
+        <!-- Search results will be inserted here by js when text is entered in search box -->
+      </ol>
+      <ol id="popularSpecies">
+        <!-- Suggested branches will be inserted here from Life_options.js on initial page load -->
+      </ol>
     </div>
 
-    <div id="locationBox" onmouseout="soonNotOverLocation()" onmouseover="overLocation()">
-        <ol id="locationButtons">
-            <!-- Current location path will be updated by js as location changes -->
-        </ol>
+    <div
+      id="locationBox"
+      onmouseout="soonNotOverLocation()"
+      onmouseover="overLocation()"
+    >
+      <ol id="locationButtons">
+        <!-- Current location path will be updated by js as location changes -->
+      </ol>
     </div>
-    
+
     <div id="menuBox" onmouseout="soonNotOverMenu()" onmouseover="overMenu()">
-        <ol id="menuButtons">
-            <li onclick="clickAbout()">About this tree</li>
-            <li onclick="clickHow()">How to use</li>
-            <li onclick="clickData()">Data sources</li>
-			<li><a href="#" onclick="toggle_signposts(this); return false;">Turn off signposts</a></li>
-			<li onclick="form_change()" >Try another shape</li>
-            <!-- <li onClick="screen_saver_start()" >Screen saver</li> -->
-            <li><a href="http://www.onezoom.org/life.html" target="_blank">To the original OneZoom</a></li>
-			<li><a href="../coding.html">To Danny's coding page</a></li>
-		</ol>
+      <ol id="menuButtons">
+        <li onclick="clickAbout()">About this tree</li>
+        <li onclick="clickHow()">How to use</li>
+        <li onclick="clickData()">Data sources</li>
+        <li>
+          <a href="#" onclick="toggle_signposts(this); return false;"
+            >Turn off signposts</a
+          >
+        </li>
+        <li onclick="form_change()">Try another shape</li>
+        <!-- <li onClick="screen_saver_start()" >Screen saver</li> -->
+        <li>
+          <a
+            href="http://www.onezoom.org/life.html"
+            target="_blank"
+            rel="noopener noreferrer"
+            >To the original OneZoom</a
+          >
+        </li>
+        <li><a href="../coding.html">To Danny's coding page</a></li>
+      </ol>
     </div>
 
     <div id="aboutBoxContainer">
-	    <div id="outsideAboutBox" onclick="closeBox()"></div>
-	    <div id="aboutBox"></div>
-	    <img id="closeButton" onclick="closeBox()" src="life_files/png/close.png">
+      <div id="outsideAboutBox" onclick="closeBox()"></div>
+      <div id="aboutBox"></div>
+      <img
+        id="closeButton"
+        onclick="closeBox()"
+        src="life_files/png/close.png"
+      />
     </div>
-
-</body>
-
+  </body>
 </html>

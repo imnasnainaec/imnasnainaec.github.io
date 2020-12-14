@@ -1,52 +1,86 @@
 <!DOCTYPE html>
 
 <html>
+  <head>
+    <title>Hex Color Game</title>
 
-	<head>
-	
-		<title>Hex Color Game</title>
-		
-		<meta author="Danny Rorabaugh">
-		<meta updated="2017-08-22">
-		
-		<style type="text/css">
-			#head {position:fixed; width:100%; left:0; top:0; height:65px; border-bottom:2px solid black;}
-			.headBlock {height:43px; display:table; padding:10px; float:left;}
-			.headContent {vertical-align:middle; display:table-cell;}
-			#scoreDiv {float:right; width:40px; border:2px solid black; border-radius:10px; text-align:center;}
-			h5, h6 {margin-top:2px; margin-bottom:1px;}
-		</style>
-		<style id="corBoxSpecs" type="text/css"></style>
-		
-		<script type="text/javascript" src="hex-color.js"></script>
-		
-	</head>
-	
-	
-	<body>
-		<div id="head">
-			<div class="headBlock" style="border: 2px solid black;">
-				<span class="headContent">Return to<br><a href="../../coding.html">DR's Coding Page</a></span>
-			</div>
-			<div class="headBlock">
-				<span class="headContent">How many color words can you think of?<br>(<a href="http://www.w3schools.com/colors/colors_names.asp" target="_blank">W3</a> has 139 named hex-values.)</span>
-			</div>
-			<div id="hbInput" class="headBlock">
-				<input type="text" id="cor" value="Type a Color Here." onkeydown = "if (event.keyCode == 13) document.getElementById('corSubmit').click()" onclick="value=''"  class="headContent">
-				<br>
-				<button id="corSubmit" onclick="submitCor()"  class="headContent">Submit</button>
-			</div>
-			<div id="scoreDiv" class="headBlock">
-				<h1 class="headContent" id="score">0</h1>
-			</div>
-			
-		</div>
-		
-		<div id="body" style="margin:auto; margin-top:75px; width:100%">
-		
-		</div>
-	
-	
-	</body>
-	
+    <meta author="Danny Rorabaugh" />
+    <meta updated="2017-08-22" />
+
+    <style type="text/css">
+      #head {
+        position: fixed;
+        width: 100%;
+        left: 0;
+        top: 0;
+        height: 65px;
+        border-bottom: 2px solid black;
+      }
+      .headBlock {
+        height: 43px;
+        display: table;
+        padding: 10px;
+        float: left;
+      }
+      .headContent {
+        vertical-align: middle;
+        display: table-cell;
+      }
+      #scoreDiv {
+        float: right;
+        width: 40px;
+        border: 2px solid black;
+        border-radius: 10px;
+        text-align: center;
+      }
+      h5,
+      h6 {
+        margin-top: 2px;
+        margin-bottom: 1px;
+      }
+    </style>
+    <style id="corBoxSpecs" type="text/css"></style>
+
+    <script type="text/javascript" src="hex-color.js"></script>
+  </head>
+
+  <body>
+    <div id="head">
+      <div class="headBlock" style="border: 2px solid black">
+        <span class="headContent"
+          >Return to<br /><a href="../../coding.html">DR's Coding Page</a></span
+        >
+      </div>
+      <div class="headBlock">
+        <span class="headContent"
+          >How many color words can you think of?<br />(<a
+            href="http://www.w3schools.com/colors/colors_names.asp"
+            target="_blank"
+            rel="noopener noreferrer"
+            >W3</a
+          >
+          has 139 named hex-values.)</span
+        >
+      </div>
+      <div id="hbInput" class="headBlock">
+        <input
+          type="text"
+          id="cor"
+          value="Type a Color Here."
+          onkeydown="if (event.keyCode == 13) document.getElementById('corSubmit').click()"
+          onclick="value=''"
+          class="headContent"
+        />
+        <br />
+        <button id="corSubmit" onclick="submitCor()" class="headContent">
+          Submit
+        </button>
+      </div>
+      <div id="scoreDiv" class="headBlock">
+        <h1 class="headContent" id="score">0</h1>
+      </div>
+    </div>
+
+    <div id="body" style="margin: auto; margin-top: 75px; width: 100%"></div>
+  </body>
 </html>
