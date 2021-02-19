@@ -1,143 +1,233 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 TRANSITIONAL//EN">
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 TRANSITIONAL//EN">
 
 <html>
+  <head>
+    <title>DR's Espa&ntilde;ol</title>
 
-	<head>
-		<title>DR's Espa&ntilde;ol</title>
-        
-        <!-- Updated 2020-05-20 -->
+    <!-- Updated 2020-05-20 -->
 
-        <meta http-equiv="content-type" content="text/html; charset=UTF-8">
-		
-		<link rel="stylesheet" type="text/css" href="rorabaugh.css">
-		<style type="text/css">#gmap_canvas img{max-width:none!important; background:none!important}</style>
-	</head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
 
-	<body lang="ES-US">
-		<div id="menu">
-			<ul>
-				<li><a href="index.html">Inicio</a></li>
-				<li><a href="research.html">Investigaci&oacute;n</a></li>
-				<li><a href="problems.html">Problemas Abiertos</a></li>
-				<li><a href="teaching.html">Ense&ntilde;anza</a></li>
-				<li><a href="coding.html">Codificaci&oacute;n</a></li>
-				<li><strong>Espa&ntilde;ol</strong></li>
-			</ul>
-		</div>
-		
-		<div style="margin-top:60px;">
-			<table width="100%">
-				<tr>
-					<td width="23%">
-						<b>Daniel es un...</b>
-						<ul>
-							<li>Acad&eacute;mico
-							<li>Ling&uuml;ista
-							<li>Matem&aacute;tico
-							<li>Protestante
-							<li>Programador
-							<li>Tio
-							<li>Whovian
-						</ul>
-					</td>
-					<td width="23%">
-						<b>A Daniel le gusta(n)...</b>
-						<ul>
-							<li>la B&iacute;blia
-							<li>la Comida
-							<li>la L&oacute;gica 
-							<li>la M&uacute;sica
-							<li>la Naturaleza
-							<li>los Perros
-							<li>los Rompecabezas
-						</ul>
-					</td>
-					<td width="25%">
-						<b>Daniel quiere...</b>
-						<ul>
-							<li>Aprender griego
-							<li>Encontrar un tesoro enterrado
-							<li>Leer todas las obras de Tolkien
-							<li>Poseer una isla
-							<li>Subir otras monta&ntilde;as
-							<li>Visitar Irlanda 
-							<li>Volver a Medell&iacute;n
-						</ul>
-					</td>
-					<td width="25%">
-						<b>Daniel colecta...</b>
-						<ul>
-							<li>Estampillas
-							<li>Juegos de mesa
-							<li>Libros viejos
-							<li>Monedas
-							<li>Mapas
-							<li>Rompecabezas de combinaci&oacute;n
-							<li>Tarjetas comerciales
-						</ul>
-					</td>
-				</tr>
-			</table>
-		</div>
-		
-		<hr>
-		
-		<!--Google Map-->
-		<div style="text-align:center;">
-			<div style="width:750px; margin:auto">
-				<h3>&iquest;Adonde he viajado en el mundo hispanohablante?</h3>
-			</div>
-			<script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script>
-			<div style="overflow:hidden; height:500px; width:750px; margin:auto;">
-				<div id="gmap_canvas" style="height:500px; width:750px;"></div>
-				<a class="google-map-code" href="http://www.mapsembed.com" id="get-map-data">www.mapsembed.com</a>
-			</div>
-			<script type="text/javascript"> 
-				function init_map(){
-					var myOptions = {zoom:4,center:new google.maps.LatLng(22,-95),mapTypeId: google.maps.MapTypeId.TERRAIN};
-					map = new google.maps.Map(document.getElementById("gmap_canvas"), myOptions);
-					
-					marker1 = new google.maps.Marker({map: map,position: new google.maps.LatLng(6.231, -75.591)});
-					infowindow1 = new google.maps.InfoWindow({content:"Medell&iacute;n" });
-					google.maps.event.addListener(marker1, "click", function(){infowindow1.open(map,marker1);});
-					
-					marker2 = new google.maps.Marker({map: map,position: new google.maps.LatLng(11.208, -74.189)});
-					infowindow2 = new google.maps.InfoWindow({content:"Santa&nbsp;Marta" });
-					google.maps.event.addListener(marker2, "click", function(){infowindow2.open(map,marker2);});
-					
-					marker3 = new google.maps.Marker({map: map,position: new google.maps.LatLng(10.394,-75.496)});
-					infowindow3 = new google.maps.InfoWindow({content:"Cartagena" });
-					google.maps.event.addListener(marker3, "click", function(){infowindow3.open(map,marker3);});
-					
-					marker4 = new google.maps.Marker({map: map,position: new google.maps.LatLng(14.563,-90.734)});
-					infowindow4 = new google.maps.InfoWindow({content:"Antigua" });
-					google.maps.event.addListener(marker4, "click", function(){infowindow4.open(map,marker4);});
-					
-					marker5 = new google.maps.Marker({map: map,position: new google.maps.LatLng(19.320,-99.152)});
-					infowindow5 = new google.maps.InfoWindow({content:"Distrito&nbsp;Federal" });
-					google.maps.event.addListener(marker5, "click", function(){infowindow5.open(map,marker5);});
-					
-					marker6 = new google.maps.Marker({map: map,position: new google.maps.LatLng(31.890,-116.691)});
-					infowindow6 = new google.maps.InfoWindow({content:"El&nbsp;Sauzal" });
-					google.maps.event.addListener(marker6, "click", function(){infowindow6.open(map,marker6);});
-					
-					marker7 = new google.maps.Marker({map: map,position: new google.maps.LatLng(14.551,-90.678)});
-					infowindow7 = new google.maps.InfoWindow({content:"Magdalena" });
-					google.maps.event.addListener(marker7, "click", function(){infowindow7.open(map,marker7);});
-					
-					marker8 = new google.maps.Marker({map: map,position: new google.maps.LatLng(25.821,-80.282)});
-					infowindow8 = new google.maps.InfoWindow({content:"Miami&nbsp;Springs" });
-					google.maps.event.addListener(marker8, "click", function(){infowindow8.open(map,marker8);});
-					
-					marker9 = new google.maps.Marker({map: map,position: new google.maps.LatLng(4.648,-74.108)});
-					infowindow9 = new google.maps.InfoWindow({content:"Bogot&aacute;" });
-					google.maps.event.addListener(marker9, "click", function(){infowindow9.open(map,marker9);});
-				} google.maps.event.addDomListener(window, 'load', init_map);
-			</script>
-		</div>
-		
-		<br>
-		
-	</body>
-	
+    <link rel="stylesheet" type="text/css" href="rorabaugh.css" />
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-8VSF4BT9C8"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+      gtag("config", "G-8VSF4BT9C8");
+    </script>
+
+    <style type="text/css">
+      #gmap_canvas img {
+        max-width: none !important;
+        background: none !important;
+      }
+    </style>
+  </head>
+
+  <body lang="ES-US">
+    <div id="menu">
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="research.html">Investigaci&oacute;n</a></li>
+        <li><a href="problems.html">Problemas Abiertos</a></li>
+        <li><a href="teaching.html">Ense&ntilde;anza</a></li>
+        <li><a href="coding.html">Codificaci&oacute;n</a></li>
+        <li><strong>Espa&ntilde;ol</strong></li>
+      </ul>
+    </div>
+
+    <div style="margin-top: 60px">
+      <table width="100%">
+        <tr>
+          <td width="23%">
+            <b>Daniel es un...</b>
+            <ul>
+              <li>Acad&eacute;mico</li>
+              <li>Ling&uuml;ista</li>
+              <li>Matem&aacute;tico</li>
+              <li>Protestante</li>
+              <li>Programador</li>
+              <li>Tio</li>
+              <li>Whovian</li>
+            </ul>
+          </td>
+          <td width="23%">
+            <b>A Daniel le gusta(n)...</b>
+            <ul>
+              <li>la B&iacute;blia</li>
+              <li>la Comida</li>
+              <li>la L&oacute;gica</li>
+              <li>la M&uacute;sica</li>
+              <li>la Naturaleza</li>
+              <li>los Perros</li>
+              <li>los Rompecabezas</li>
+            </ul>
+          </td>
+          <td width="25%">
+            <b>Daniel quiere...</b>
+            <ul>
+              <li>Aprender griego</li>
+              <li>Encontrar un tesoro enterrado</li>
+              <li>Leer todas las obras de Tolkien</li>
+              <li>Poseer una isla</li>
+              <li>Subir otras monta&ntilde;as</li>
+              <li>Visitar Irlanda</li>
+              <li>Volver a Medell&iacute;n</li>
+            </ul>
+          </td>
+          <td width="25%">
+            <b>Daniel colecta...</b>
+            <ul>
+              <li>Estampillas</li>
+              <li>Juegos de mesa</li>
+              <li>Libros viejos</li>
+              <li>Monedas</li>
+              <li>Mapas</li>
+              <li>Rompecabezas de combinaci&oacute;n</li>
+              <li>Tarjetas comerciales</li>
+            </ul>
+          </td>
+        </tr>
+      </table>
+    </div>
+
+    <hr />
+
+    <!--Google Map-->
+    <div style="text-align: center">
+      <div style="width: 750px; margin: auto">
+        <h3>&iquest;Adonde he viajado en el mundo hispanohablante?</h3>
+      </div>
+      <script
+        type="text/javascript"
+        src="http://maps.google.com/maps/api/js?sensor=false"
+      ></script>
+      <div style="overflow: hidden; height: 500px; width: 750px; margin: auto">
+        <div id="gmap_canvas" style="height: 500px; width: 750px"></div>
+        <a
+          class="google-map-code"
+          href="http://www.mapsembed.com"
+          id="get-map-data"
+          >www.mapsembed.com</a
+        >
+      </div>
+      <script type="text/javascript">
+        function init_map() {
+          var myOptions = {
+            zoom: 4,
+            center: new google.maps.LatLng(22, -95),
+            mapTypeId: google.maps.MapTypeId.TERRAIN,
+          };
+          map = new google.maps.Map(
+            document.getElementById("gmap_canvas"),
+            myOptions
+          );
+
+          marker1 = new google.maps.Marker({
+            map: map,
+            position: new google.maps.LatLng(6.231, -75.591),
+          });
+          infowindow1 = new google.maps.InfoWindow({
+            content: "Medell&iacute;n",
+          });
+          google.maps.event.addListener(marker1, "click", function () {
+            infowindow1.open(map, marker1);
+          });
+
+          marker2 = new google.maps.Marker({
+            map: map,
+            position: new google.maps.LatLng(11.208, -74.189),
+          });
+          infowindow2 = new google.maps.InfoWindow({
+            content: "Santa&nbsp;Marta",
+          });
+          google.maps.event.addListener(marker2, "click", function () {
+            infowindow2.open(map, marker2);
+          });
+
+          marker3 = new google.maps.Marker({
+            map: map,
+            position: new google.maps.LatLng(10.394, -75.496),
+          });
+          infowindow3 = new google.maps.InfoWindow({ content: "Cartagena" });
+          google.maps.event.addListener(marker3, "click", function () {
+            infowindow3.open(map, marker3);
+          });
+
+          marker4 = new google.maps.Marker({
+            map: map,
+            position: new google.maps.LatLng(14.563, -90.734),
+          });
+          infowindow4 = new google.maps.InfoWindow({ content: "Antigua" });
+          google.maps.event.addListener(marker4, "click", function () {
+            infowindow4.open(map, marker4);
+          });
+
+          marker5 = new google.maps.Marker({
+            map: map,
+            position: new google.maps.LatLng(19.32, -99.152),
+          });
+          infowindow5 = new google.maps.InfoWindow({
+            content: "Distrito&nbsp;Federal",
+          });
+          google.maps.event.addListener(marker5, "click", function () {
+            infowindow5.open(map, marker5);
+          });
+
+          marker6 = new google.maps.Marker({
+            map: map,
+            position: new google.maps.LatLng(31.89, -116.691),
+          });
+          infowindow6 = new google.maps.InfoWindow({
+            content: "El&nbsp;Sauzal",
+          });
+          google.maps.event.addListener(marker6, "click", function () {
+            infowindow6.open(map, marker6);
+          });
+
+          marker7 = new google.maps.Marker({
+            map: map,
+            position: new google.maps.LatLng(14.551, -90.678),
+          });
+          infowindow7 = new google.maps.InfoWindow({ content: "Magdalena" });
+          google.maps.event.addListener(marker7, "click", function () {
+            infowindow7.open(map, marker7);
+          });
+
+          marker8 = new google.maps.Marker({
+            map: map,
+            position: new google.maps.LatLng(25.821, -80.282),
+          });
+          infowindow8 = new google.maps.InfoWindow({
+            content: "Miami&nbsp;Springs",
+          });
+          google.maps.event.addListener(marker8, "click", function () {
+            infowindow8.open(map, marker8);
+          });
+
+          marker9 = new google.maps.Marker({
+            map: map,
+            position: new google.maps.LatLng(4.648, -74.108),
+          });
+          infowindow9 = new google.maps.InfoWindow({
+            content: "Bogot&aacute;",
+          });
+          google.maps.event.addListener(marker9, "click", function () {
+            infowindow9.open(map, marker9);
+          });
+        }
+        google.maps.event.addDomListener(window, "load", init_map);
+      </script>
+    </div>
+
+    <br />
+  </body>
 </html>
