@@ -4,7 +4,7 @@
   <head>
     <title>DR's Espa&ntilde;ol</title>
 
-    <!-- Updated 2021-04-27 -->
+    <!-- Updated 2025-11-04 -->
 
     <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
 
@@ -44,19 +44,71 @@
       </ul>
     </div>
 
-    <div style="margin-top: 60px">
+    <div class="slideshow">
+      <a
+        href="https://www.wycliffe.org/partner/rorabaugh"
+        rel="noopener noreferrer"
+        target="_blank"
+      >
+        <img src="imgs/WBT-ora.png" class="active" />
+        <img src="imgs/WBT-equipo.png" />
+        <img src="imgs/WBT-dar.png" />
+        <img src="imgs/WBT-aboga.png" />
+        <img src="imgs/WBT-iglesia.png"
+      /></a>
+    </div>
+
+    <style>
+      .slideshow {
+        aspect-ratio: 480 / 239;
+        margin-top: 60px;
+        max-width: 2880px;
+        overflow: hidden;
+        position: relative;
+        width: 100%;
+      }
+      .slideshow img {
+        height: 100%;
+        object-fit: cover;
+        opacity: 0;
+        position: absolute;
+        transition: opacity 2s ease-in-out;
+        width: 100%;
+      }
+      .slideshow img.active {
+        opacity: 1;
+      }
+    </style>
+
+    <script>
+      const slides =
+        document.currentScript.previousElementSibling.previousElementSibling.querySelectorAll(
+          "img"
+        );
+      let index = 0;
+      const interval = 12000; // 12 seconds per image
+      setInterval(() => {
+        slides[index].classList.remove("active");
+        index = (index + 1) % slides.length;
+        slides[index].classList.add("active");
+      }, interval);
+    </script>
+
+    <hr />
+
+    <div>
       <table width="100%">
         <tr>
           <td width="23%">
             <b>Daniel es un...</b>
             <ul>
               <li>Acad&eacute;mico</li>
+              <li>Esposo</li>
               <li>Ling&uuml;ista</li>
-              <li>Marido</li>
               <li>Matem&aacute;tico</li>
+              <li>Padre</li>
               <li>Protestante</li>
               <li>Programador</li>
-              <li>Tio</li>
               <li>Whovian</li>
             </ul>
           </td>
@@ -65,7 +117,7 @@
             <ul>
               <li>la B&iacute;blia</li>
               <li>la Comida</li>
-              <li>su Esposa</li>
+              <li>su Familia</li>
               <li>la L&oacute;gica</li>
               <li>la M&uacute;sica</li>
               <li>la Naturaleza</li>
